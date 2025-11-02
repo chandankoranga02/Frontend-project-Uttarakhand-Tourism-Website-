@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chopta (Mini Switzerland) — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f3f9f2;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #a8e6cf, #56ab2f);
+            color: #222;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 8px 28px rgba(86, 171, 47, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .9;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:940px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        h2.section {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #c0e6a8;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #f0fff0;
+            border: 1px solid #c2f0c2;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #2e7d32;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.25);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Chopta (Mini Switzerland)</h1>
+            <p>Known as “Mini Switzerland of India,” Chopta offers panoramic alpine meadows, snow-capped peaks, and
+                pristine forests, perfect for trekking and nature lovers.</p>
+            <div class="badges">
+                <div class="badge">Nature</div>
+                <div class="badge">Adventure</div>
+                <div class="badge">Trekking</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Chopta is a small region in Uttarakhand, part of the Kedarnath wildlife sanctuary. Its lush green
+                        meadows and scenic backdrop of Himalayan peaks earn it the nickname "Mini Switzerland."</p>
+                    <p>The area serves as the base for the popular Tungnath trek, the highest Shiva temple in the world.
+                        Tourists enjoy trekking, bird-watching, and exploring alpine flora and fauna. Summer is ideal
+                        for camping under clear skies.</p>
+                    <p>Accessibility is good by road to Chopta, but trekking shoes and warm clothing are recommended.
+                        Limited eateries and guesthouses are available near the base.</p>
+                </section>
+
+                <section class="highlights">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Stunning alpine meadows and Himalayan views</li>
+                        <li>Base for Tungnath & Chandrashila trek</li>
+                        <li>Bird-watching and nature photography</li>
+                        <li>Pristine, less crowded than other hill stations</li>
+                        <li>Camping and adventure activities available</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Travel Tips:</strong>
+                    <p>Best visited April to June and September to November. Carry trekking shoes, jackets, water, and
+                        snacks. Respect local flora and do not litter.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photos</h2>
+                    <div class="images">
+                        <img src="https://uttarakhandtourism.gov.in/assets/media/UTDB_media_logo1745916342a5160ff72b8591a242f1fe76dc5fe7f3.jpg"
+                            alt="Chopta meadows view">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMmwghrRqckzLbx2np92C5r1DubNLryvQDSw&s"
+                            alt="Chopta trekking path">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section">Nearby Attractions</h2>
+                    <p class="muted">Tungnath Temple, Chandrashila Peak, Deoria Tal, Kund</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Season:</span> <span class="muted">April – June, Sept – Nov</span></p>
+                    <p><span class="meta">Activities:</span> <span class="muted">Trekking, Camping, Nature Walks</span>
+                    </p>
+                    <p><span class="meta">Region:</span> <span class="muted">Rudraprayag, Uttarakhand</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Airport:</strong> Jolly Grant, Dehradun (~200 km)</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Rishikesh / Haridwar</p>
+                    <p class="muted"><strong>Road:</strong> Drive to Chopta; trekking shoes needed for meadows</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay & Food</h3>
+                    <ul class="list">
+                        <li>Guesthouses and lodges near Chopta base</li>
+                        <li>Camping facilities in summer</li>
+                        <li>Local eateries serving Uttarakhand cuisine</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Chopta%20Booking" class="btn">Book Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#1b5e20;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

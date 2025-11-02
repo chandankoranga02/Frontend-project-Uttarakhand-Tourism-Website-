@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pindari Glacier Trek — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+        }
+
+        body {
+            background: #f3f7fb;
+            color: #112;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 32px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #cfe8ff, #9ccfff);
+            padding: 28px;
+            border-radius: 12px;
+            text-align: center;
+            color: #05345a;
+            box-shadow: 0 10px 28px rgba(15, 65, 110, 0.08);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .95;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(5, 52, 90, 0.06);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            color: #05345a;
+            font-size: .85rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 22px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(12, 30, 40, 0.04);
+        }
+
+        h2.section {
+            color: #0b567f;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #d8eefc;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #f0fbff;
+            border: 1px solid #d3ecff;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #074a75;
+            margin-bottom: 8px;
+            font-size: 1.03rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 16px;
+            border-radius: 10px;
+            background: #0b567f;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(11, 86, 127, 0.18);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.4rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pindari Glacier Trek</h1>
+            <p>Classic Himalayan glacier trek in Kumaon — scenic moraines, high-altitude camps, and dramatic views of
+                Nanda Devi and other peaks.</p>
+            <div class="badges">
+                <div class="badge">Trekking</div>
+                <div class="badge">Alpine</div>
+                <div class="badge">Moderate</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>The Pindari Glacier trek (base: Khati/Pindari) is a popular 6–8 day out-and-back trek in the
+                        Kumaon Himalaya. The trail follows the Pindari River valley, passes lush meadows, rhododendron
+                        and oak forests, and ends at the glacier snout offering close views of towering peaks—Nanda Kot
+                        (6,861 m), Maiktoli and Panwali Dwar among them.</p>
+                    <p>Compared with high technical glacier routes, Pindari is non-technical but requires good fitness.
+                        Camps are typically set at Dwali, Phurkia, Khati and the glacier base. The route is scenic
+                        year-round when open (May–October), with post-monsoon clarity giving the best mountain vistas.
+                    </p>
+                </section>
+
+                <section class="highlights">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Stunning view of Nanda Kot, Maiktoli & Panwali Dwar</li>
+                        <li>Accessible glacier snout — excellent for beginners with experience</li>
+                        <li>Lush alpine meadows, forested trails and river crossings</li>
+                        <li>Base villages (Dhakuri, Khati) give authentic Kumaoni experience</li>
+                        <li>Good for photography, star-gazing and seasonal wildflowers</li>
+                    </ul>
+                </section>
+
+                <div class="tips" aria-live="polite">
+                    <strong>Practical tips:</strong>
+                    <p style="margin-top:8px;">Fitness: moderate trek fitness (6–8 hrs walking some days). Pack: warm
+                        layers, waterproof jacket, trekking boots, first-aid, sunscreen, headlamp. Permit: register with
+                        local forest/trek office if required. Altitude: max ~3,600–3,700 m at glacier snout —
+                        acclimatise gradually. Weather: monsoon makes trail slippery; best months May–June and Sept–Oct.
+                    </p>
+                </div>
+
+                <section style="margin-top:14px;">
+                    <h2 class="section">Route & Typical Itinerary</h2>
+                    <ul>
+                        <li>Day 0: Kathgodam → Bageshwar / Karanprayag (drive)</li>
+                        <li>Day 1: Drive to Dhakuri (trek start) — camp</li>
+                        <li>Day 2: Dhakuri → Khati / Phurkia — camp</li>
+                        <li>Day 3: Khati → Dwali/Phurkia — camp</li>
+                        <li>Day 4: Dwali → Pindari Glacier snout & return to camp</li>
+                        <li>Day 5–6: Return trek to Dhakuri and drive back</li>
+                    </ul>
+                </section>
+
+                <section style="margin-top:14px;">
+                    <h2 class="section">Photos</h2>
+                    <div class="images" aria-hidden="false">
+                        <img src="https://trekthehimalayas.com/images/PindariGlacierTrek/GalleryDesktop/Autumn/d807e58e-0107-40cb-bade-84aec28522a5_Pindari-Glacier-2.webp"
+                            alt="Pindari Glacier snout and moraines">
+                        <img src="https://www.treksandtrails.org/system/images/000/228/034/af4e63b8d4aab62f763fd69a5b493902/original/Pindari-Glacier.jpg"
+                            alt="Trail to Pindari Glacier across meadows">
+                    </div>
+                </section>
+
+                <section style="margin-top:14px;">
+                    <h2 class="section">Safety & Responsibility</h2>
+                    <p class="muted">Respect local environment: carry out all plastic, follow campfire rules, and use
+                        local guides/porters to support village economy. Glacier travel can present crevasses and
+                        unstable moraine — stick to marked routes and experienced leaders. If weather turns bad, descend
+                        immediately.</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Difficulty:</span> <span class="muted">Moderate (non-technical)</span></p>
+                    <p><span class="meta">Max Altitude:</span> <span class="muted">~3,600–3,700 m (glacier snout)</span>
+                    </p>
+                    <p><span class="meta">Typical Duration:</span> <span class="muted">5–7 days (round trip)</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Road:</strong> Drive to Dhakuri/Deval via Bageshwar or Karanprayag.
+                        Kathgodam is nearest railhead (base for Kumaon treks).</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~220 km drive depending route)</p>
+                    <p class="muted"><strong>Nearest Airport:</strong> Pantnagar (~250 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Local Support</h3>
+                    <ul class="list">
+                        <li>Guides and porters available at Dhakuri/Khati</li>
+                        <li>Basic tea-huts and seasonal camps on route</li>
+                        <li>Best to pre-book through a local operator for tents & meals</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Pindari%20Glacier%20Trek" class="btn">Book Trek</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#074a75;">Send Enquiry</a>
+                    <p class="small">Local Guide Contacts: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

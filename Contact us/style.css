@@ -1,0 +1,116 @@
+/* Page reset (keep yours) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Center container vertically and horizontally */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f6f7fb 0%, #eef2f7 100%);
+  padding: 2rem;
+}
+
+/* Constrain and style the form */
+form#contact-form {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  padding: 2.25rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  /* Layered realistic shadow: near + soft distant */
+  box-shadow:
+    10px 6px 28px rgba(0,0,0,0.08),    /* main soft shadow */
+    10px 2px 10px rgba(0,0,0,0.04);     /* subtle depth */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover lift effect (optional but nice) */
+form#contact-form:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.12),
+    0 6px 12px rgba(0,0,0,0.06);
+}
+
+/* Header text */
+.form-header h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 0.25rem;
+  font-size: 1.6rem;
+}
+.form-header p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* Layout */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1f6feb;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #dae1ea;
+  font-size: 1rem;
+  outline: none;
+  background: #fbfdff;
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0b63ff;
+  box-shadow: 0 6px 18px rgba(11,99,255,0.08);
+}
+
+/* Buttons */
+.d-flex .btn {
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+}
+.btn-primary {
+  background: linear-gradient(180deg,#0561ff,#0046d6);
+  border: none;
+  box-shadow: 0 6px 18px rgba(5,97,255,0.12);
+}
+.btn-secondary {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  form#contact-form {
+    padding: 1.25rem;
+    border-radius: 10px;
+  }
+  .form-group { flex: 1 1 100%; }
+}
+
+

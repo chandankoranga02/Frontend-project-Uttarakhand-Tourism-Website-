@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Banasur Fort — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f2f7f2;
+            color: #1b1b1b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #a3d9a5, #4d9153);
+            color: #0b3d19;
+            text-align: center;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(11, 61, 25, 0.12);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: .95;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(11, 61, 25, 0.1);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: .85rem;
+            color: #0b3d19;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        h2.section {
+            color: #0b3d19;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #a3d9a5;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #e6f4e6;
+            border: 1px solid #b3e6b3;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #0b3d19;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #0b3d19;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(11, 61, 25, 0.2);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Banasur Fort</h1>
+            <p>Legendary fort atop a hill, surrounded by dense forests and mythological tales of demon king Banasur.</p>
+            <div class="badges">
+                <div class="badge">Heritage</div>
+                <div class="badge">Nature</div>
+                <div class="badge">Trekking</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section>
+                    <h2 class="section">Overview</h2>
+                    <p>Banasur Fort is a historic fort located on a hill surrounded by lush forests. According to local
+                        legend, it was built by the demon king Banasur. The fort offers a mix of history, folklore, and
+                        trekking opportunities.</p>
+                    <p>Visitors can explore the fort ruins, enjoy views of the surrounding hills and valleys, and
+                        connect with nature while walking through forest trails. It's a quieter destination ideal for
+                        history enthusiasts and trekkers.</p>
+                </section>
+
+                <section>
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Historic fort with folklore significance</li>
+                        <li>Hilltop trekking and panoramic views</li>
+                        <li>Forest surroundings with nature trails</li>
+                        <li>Photography of ruins and landscapes</li>
+                        <li>Peaceful, offbeat destination</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Visitor Tips:</strong>
+                    <p>Wear sturdy shoes for trekking. Carry water, snacks, and sun protection. Best visited between
+                        Mar–Jun and Sep–Nov. Respect forest and ruins.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photo Gallery</h2>
+                    <div class="images">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banasur_Fort_View.jpg"
+                            alt="Banasur Fort view">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Banasur_Hill_Fort.jpg"
+                            alt="Hill and fort ruins">
+                    </div>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Time:</span> <span class="muted">Mar–Jun & Sep–Nov</span></p>
+                    <p><span class="meta">Visit Duration:</span> <span class="muted">2–3 hours</span></p>
+                    <p><span class="meta">Entry Fee:</span> <span class="muted">Free</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Town:</strong> Champawat (~25 km)</p>
+                    <p class="muted"><strong>Road:</strong> Accessible by local roads; short trek to fort</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~230 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Facilities</h3>
+                    <ul class="list">
+                        <li>Guided trekking and local guides</li>
+                        <li>Basic refreshment stalls near base</li>
+                        <li>Photography spots</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Banasur%20Fort" class="btn">Plan Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#0b3d19;">Send Enquiry</a>
+                    <p class="small">Phone: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

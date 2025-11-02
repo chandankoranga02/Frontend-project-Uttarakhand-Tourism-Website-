@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Forest Research Institute (FRI) — Dehradun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #f0f6f2 0%, #eaf3ea 100%);
+            color: #1b2b20;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #bde6c4, #7bbf8a);
+            color: #072012;
+            padding: 28px 18px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(20, 60, 40, 0.08);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: 0.95;
+        }
+
+        /* Top badges */
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Article */
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 10, 10, 0.05);
+        }
+
+        h2.section {
+            color: #1b5e20;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #dff5e1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #234033;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #f7fff7;
+            border: 1px solid #e6f6e8;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        /* Side cards */
+        .side {
+            position: relative;
+            top: 0;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #19632d;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+            color: #072012;
+        }
+
+        .muted {
+            color: #4b6b5a;
+            font-size: 0.95rem;
+        }
+
+        /* Hotels & cafes */
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        /* Images */
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #19632d;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(25, 99, 45, 0.15);
+        }
+
+        .btn.ghost {
+            background: transparent;
+            border: 2px solid rgba(25,99,45,0.12);
+            color: #19632d;
+            font-weight: 700;
+        }
+
+        /* Footer small */
+        .small {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Responsive small tweaks */
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .images img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Forest Research Institute (FRI), Dehradun</h1>
+            <p>Historic colonial-era campus, botanical museum, long shaded avenues and photogenic arches — perfect for history, nature and architecture lovers.</p>
+            <div class="badges">
+                <div class="badge">Architecture</div>
+                <div class="badge">Botanical Museum</div>
+                <div class="badge">Great for photos</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <!-- Main content -->
+            <article>
+                <!-- Overview / long description (3–5 paragraphs) -->
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>The Forest Research Institute (FRI) in Dehradun is a sprawling campus of red-brick colonial architecture set inside well-manicured lawns and dense tree cover. Established as a premier centre for forestry research and training, the impressive Neo-classical building houses a botanical museum, herbarium and research departments — but it’s the grand colonnades, domes and long arched corridors that draw visitors and photographers.</p>
+
+                    <p>Visitors come for more than exhibits: long shaded walks beneath mature trees, heritage-style architecture that looks good in every season, and the small on-site museums that explain India's forest biodiversity. Weekends are lively with families, photography students and guided school groups. The campus is large and flat — easy to explore on foot — with benches, lawns and many quiet corners for a picnic or a long read under a tree.</p>
+
+                    <p>FRI also hosts seasonal events, botanical displays and occasional workshops. The museums inside the building (museum, herbarium and institute exhibits) often require a small additional ticket. While the core campus remains open to visitors, parts of FRI are active research areas — please follow signboards and avoid restricted zones.</p>
+                </section>
+
+                <!-- Highlights -->
+                <section class="highlights" style="margin-top:16px;">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Iconic red-brick colonial architecture and long arched corridors ideal for photography.</li>
+                        <li>Botanical Museum with forestry exhibits and taxidermy displays (separate small fee).</li>
+                        <li>Large shady grounds — good for family picnics and relaxed walks.</li>
+                        <li>Near several other Dehradun attractions — easy to combine into a half/full day.</li>
+                    </ul>
+                </section>
+
+                <!-- Tips -->
+                <div class="tips" aria-live="polite" style="margin-top:14px;">
+                    <strong>Quick tips:</strong>
+                    <p style="margin-top:8px;">FRI opens around 9:00 AM — visit early to avoid midday crowds and harsh light. Wear comfortable shoes — grounds are extensive. Museum entries are usually charged separately (nominal). Respect "research area" signs — some labs and archives are closed to public. Best months: Oct–Mar for crisp skies and pleasant walking.</p>
+                </div>
+
+                <!-- Images -->
+                <section style="margin-top:16px;">
+                    <h2 class="section">Photos</h2>
+                    <div class="images" aria-hidden="false">
+                        <!-- Free image API placeholders -->
+                        <img src="https://www.dooncircle.com/wp-content/uploads/2018/06/FRI-Full-view.jpg" alt="FRI main building and lawn">
+                        <img src="https://dehraduntourism.co.in/images//tourist-places/forest-research-institute-dehradun/forest-research-institute-dehradun-tourism-entry-ticket-price.jpg" alt="FRI arches corridor">
+                    </div>
+
+                </section>
+
+                <!-- Related / combine -->
+                <section style="margin-top:18px;">
+                    <h2 class="section">Combine With</h2>
+                    <p class="muted">Pair FRI with Robber’s Cave and Sahastradhara for a mixed day of heritage, nature and light adventure — all within a short drive across Dehradun.</p>
+                </section>
+            </article>
+
+            <!-- Side column -->
+            <aside class="side">
+                <!-- Quick facts card -->
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Typical hours:</span> <span class="muted">9:00 AM – 5:30 PM (public visiting hours)</span></p>
+                    <p><span class="meta">Avg time to cover:</span> <span class="muted">1.5–3 hours (including museum)</span></p>
+                    <p><span class="meta">Entry fee:</span> <span class="muted">Nominal (campus entry often ₹20–₹40; museum tickets separate ₹40–₹60).</span></p>
+                    <p><span class="meta">Best time to visit:</span> <span class="muted">Oct–Mar (pleasant weather)</span></p>
+                </div>
+
+                <!-- Transport card -->
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>From Dehradun Railway Station:</strong> ~4–7 km (taxi/auto 15–25 mins depending on traffic).</p>
+                    <p class="muted"><strong>From ISBT:</strong> Buses and autos available; approx 20–30 mins by road.</p>
+                    <p class="muted"><strong>Parking:</strong> Small paid parking near main gate; campus is walkable once inside.</p>
+                </div>
+
+                <!-- Museums & timings -->
+                <div class="card">
+                    <h3>Museum & Tickets</h3>
+                    <ul class="list">
+                        <li><strong>Botanical Museum:</strong> Separate ticket (nominal, around ₹40–₹60 for adults depending on source).</li>
+                        <li><strong>Guided tours:</strong> Available for groups on request — check at the gate or info desk.</li>
+                        <li><small class="muted">Confirm museum hours and closure days before planning (some sections closed on gazetted holidays).</small></li>
+                    </ul>
+                </div>
+
+                <!-- Hotels -->
+                <div class="card">
+                    <h3>Nearby Hotels</h3>
+                    <ul class="list">
+                        <li><strong>Lemon Tree Hotel</strong> — Comfortable mid-range, ~2–4 km.</li>
+                        <li><strong>Hotel Alka</strong> — Budget option with easy access.</li>
+                        <li><strong>Richmond Hotel / Four Points</strong> — Upscale stays within city reach.</li>
+                        <li><small class="muted">Rajpur & Mussoorie Road areas have many guesthouses and cafés.</small></li>
+                    </ul>
+                </div>
+
+                <!-- Cafes -->
+                <div class="card">
+                    <h3>Cafes & Snacks</h3>
+                    <ul class="list">
+                        <li><strong>Town Square Café</strong> — Good for breakfast.</li>
+                        <li><strong>Black Pepper Café</strong> — Popular on Rajpur Road.</li>
+                        <li>On-site tea/fruit vendors near the entrance on busy days.</li>
+                    </ul>
+                </div>
+
+                <!-- Booking -->
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <p class="muted">Group visits, photography permits or educational tours — contact the institute office or request information at the gate.</p>
+                    <a href="mailto:info@fri-contact.example?subject=FRI%20Visit%20Enquiry" class="btn" style="display:inline-block;margin-bottom:8px;">Request Info</a>
+                    <a href="mailto:bookings@yourtourism.com" class="btn ghost" style="display:inline-block;">Local Guide</a>
+                    <p class="small" style="margin-top:10px;">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+
+                <!-- Safety -->
+                <div class="card">
+                    <h3>Safety & Accessibility</h3>
+                    <p class="muted">Campus is generally flat and accessible; pathways are paved. Some interior museum rooms may have steps. Watch for vehicle movement on internal roads. Avoid restricted research areas and follow signboards.</p>
+                </div>
+            </aside>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

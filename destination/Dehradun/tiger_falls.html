@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tiger Falls — Chakrata / Dehradun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #eef6fb 0%, #f7fbff 100%);
+            color: #102027;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+
+        /* Header (waterfall-blue palette) */
+        header {
+            background: linear-gradient(90deg, #bfe9ff, #7fb8d6);
+            color: #052a37;
+            padding: 28px 18px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(10, 40, 60, 0.08);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: 0.95;
+        }
+
+        /* Top badges */
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Article */
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 10, 10, 0.05);
+        }
+
+        h2.section {
+            color: #0b5570;
+            margin-bottom: 12px;
+            border-bottom: 3px solid rgba(127,184,214,0.22);
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #12323a;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #f3fbff;
+            border: 1px solid #e6f7ff;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        /* Side cards */
+        .side {
+            position: relative;
+            top: 0;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #0b5b6a;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+            color: #052a37;
+        }
+
+        .muted {
+            color: #536e73;
+            font-size: 0.95rem;
+        }
+
+        /* Hotels & cafes */
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        /* Images */
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #0b6b89;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(11,107,137,0.15);
+        }
+
+        .btn.light {
+            background: transparent;
+            border: 2px solid rgba(11,107,137,0.12);
+            color: #0b6b89;
+            font-weight: 700;
+        }
+
+        /* Footer small */
+        .small {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Responsive small tweaks */
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .images img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Tiger Falls — Chakrata (Dehradun District)</h1>
+            <p>A high, scenic cascade set in oak–rhododendron forests — a rewarding short trek and a cold plunge in summer.</p>
+            <div class="badges">
+                <div class="badge">Waterfall</div>
+                <div class="badge">Short trek</div>
+                <div class="badge">Swimming allowed (seasonal)</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <!-- Main content -->
+            <article>
+                <!-- Overview / long description (3–5 paragraphs) -->
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Tiger Falls is one of the most impressive waterfalls near Dehradun, located in the Chakrata region. The fall plunges dramatically through a rocky gorge framed by oak and rhododendron forests — the route to the base is scenic and offers multiple viewpoints. Depending on where you start, the approach involves a short drive from Chakrata followed by a trek of roughly 1–5 km through forest trails.</p>
+
+                    <p>The waterfall is popular in summer for bathing and for photographers chasing long-exposure shots. In winter and immediately after heavy monsoon, access can be trickier: the trail grows slippery and water levels change. There are few commercial facilities at the site itself — small local stalls sell tea and snacks at the parking/entry point, but carry water and basic supplies for the hike.</p>
+
+                    <p>Expect a mix of day-trippers, local families and adventure groups. Vehicles can come fairly close, but most visitors finish with a short walk to reach the viewpoint or the pool. Respect local signage — some areas are not safe for swimming because of undercurrents and submerged rocks.</p>
+                </section>
+
+                <!-- Highlights -->
+                <section class="highlights" style="margin-top:16px;">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Impressive vertical drop (noted sources record ~312 ft / ~95 m) with a rocky plunge pool.</li>
+                        <li>Scenic oak & rhododendron forest approach — great for short treks and nature photo-ops.</li>
+                        <li>Good summer swimming spots — but check safety and local guidance before entering water.</li>
+                        <li>Combine with Chakrata town sights for an overnight or day-long trip from Dehradun.</li>
+                    </ul>
+                </section>
+
+                <!-- Tips -->
+                <div class="tips" aria-live="polite" style="margin-top:14px;">
+                    <strong>Quick tips:</strong>
+                    <p style="margin-top:8px;">Road to Chakrata is winding — drive carefully. Wear sturdy shoes; trail can be slippery after rains. Carry water and a light snack; mobile network may be patchy. Avoid visiting right after heavy monsoon or during storms. If you plan to swim, check locals for safe spots and avoid going alone.</p>
+                </div>
+
+                <!-- Images -->
+                <section style="margin-top:16px;">
+                    <h2 class="section">Photos</h2>
+                    <div class="images" aria-hidden="false">
+                        <!-- Dynamic Unsplash placeholders -->
+                        <img src="https://travelchardham.com/sites/default/files/2024-12/Full%20Image%20of%20Tiger%20Fall.jpg" alt="Tiger Falls view">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHuzejWKHKh2QTbVViLFyKEA_rGQgV_jJRlw&s" alt="Forest waterfall">
+                    </div>
+
+                </section>
+
+                <!-- Related / combine -->
+                <section style="margin-top:18px;">
+                    <h2 class="section">Combine With</h2>
+                    <p class="muted">Tiger Falls is best combined with a Chakrata stop — include Deoban viewpoint, Budher Caves (Lal Tibba) or a short village walk to make a full-day or overnight nature trip from Dehradun.</p>
+                </section>
+            </article>
+
+            <!-- Side column -->
+            <aside class="side">
+                <!-- Quick facts card -->
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Distance from Dehradun:</span> <span class="muted">≈ 85–100 km by road (varies by route).</span></p>
+                    <p><span class="meta">Distance from Chakrata:</span> <span class="muted">≈ 15–20 km (some routes require a 1–5 km trek).</span></p>
+                    <p><span class="meta">Typical hours:</span> <span class="muted">Sunrise–Sunset (visit during daylight).</span></p>
+                    <p><span class="meta">Suggested visit length:</span> <span class="muted">2–4 hours (including trek and photos).</span></p>
+                </div>
+
+                <!-- Transport card -->
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>From Dehradun:</strong> Drive via NH7/Chakrata road — travel time ~2–3 hrs depending on traffic and route.</p>
+                    <p class="muted"><strong>From Chakrata town:</strong> Local jeeps/taxis can take you close; final stretch often requires a short trek (1–5 km) on forest trails.</p>
+                    <p class="muted"><strong>Parking:</strong> Limited parking at the trailhead/entry; small fees may apply in busy season.</p>
+                </div>
+
+                <!-- Timings & fees -->
+                <div class="card">
+                    <h3>Timings & Fees</h3>
+                    <ul class="list">
+                        <li><strong>Entry:</strong> Many sources list no formal statewide entry — local parking/visitor fees (small) may be charged at gate in peak season.</li>
+                        <li><strong>Opening:</strong> Open during daylight; avoid visiting after dark for safety.</li>
+                        <li><small class="muted">Note: small local operators sometimes charge for parking/guide — carry cash.</small></li>
+                    </ul>
+                </div>
+
+                <!-- Hotels -->
+                <div class="card">
+                    <h3>Nearby Stays</h3>
+                    <ul class="list">
+                        <li><strong>Chakrata guesthouses</strong> — local, cosy options for overnight stays.</li>
+                        <li><strong>Dehradun hotels</strong> — if coming as a day trip from the city, stay in Dehradun and start early.</li>
+                        <li><small class="muted">For trekking-style visits, consider homestays in Chakrata to get local guidance and early starts.</small></li>
+                    </ul>
+                </div>
+
+                <!-- Cafes -->
+                <div class="card">
+                    <h3>Cafes & Snacks</h3>
+                    <ul class="list">
+                        <li><strong>Local tea stalls</strong> — near parking and small shops on the Chakrata approach.</li>
+                        <li><strong>Chakrata town cafés</strong> — better refreshments before/after the trip.</li>
+                    </ul>
+                </div>
+
+                <!-- Booking -->
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <p class="muted">Need a local taxi, guide or picnic setup? Contact local Chakrata operators or ask at the Chakrata bus stand for trusted drivers.</p>
+                    <a href="mailto:bookings@yourtourism.com?subject=Tiger%20Falls%20Chakrata%20Booking" class="btn" style="display:inline-block;margin-bottom:8px;">Book Transport</a>
+                    <a href="mailto:info@yourtourism.com" class="btn light" style="display:inline-block;">Ask for Guide</a>
+                    <p class="small" style="margin-top:10px;">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+
+                <!-- Safety -->
+                <div class="card">
+                    <h3>Safety & Environment</h3>
+                    <p class="muted">Trail can be slippery after rains; avoid going alone and don’t venture into fast currents. Respect local flora and do not litter. Mobile coverage may be patchy — share your plan with someone before heading out.</p>
+                </div>
+            </aside>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

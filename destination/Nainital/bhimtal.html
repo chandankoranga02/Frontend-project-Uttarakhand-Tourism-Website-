@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bhimtal — Nainital District</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f7fbfc;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #7dd3fc, #38bdf8);
+            color: #042a3a;
+            padding: 28px 18px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(6, 78, 96, 0.08);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .95;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(4, 42, 58, 0.08);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: .85rem;
+            color: #042a3a;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 10, 10, 0.04);
+        }
+
+        h2.section {
+            color: #0369a1;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #cfeffd;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #f0fbff;
+            border: 1px solid #d1f5ff;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side {
+            position: relative;
+            top: 0;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #05445e;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .muted {
+            color: #666;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #0369a1;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(3, 105, 161, 0.14);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.4rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bhimtal</h1>
+            <p>Tranquil lake town near Nainital — larger, quieter lake with an island, boating, aquarium and scenic
+                walks.</p>
+            <div class="badges">
+                <div class="badge">Lake</div>
+                <div class="badge">Family</div>
+                <div class="badge">Relaxation</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Bhimtal is centered around a picturesque freshwater lake with a small island at its heart.
+                        Compared to Naini Lake, Bhimtal is calmer and better suited for relaxed stays, long walks and
+                        birdwatching. The town has well-kept promenades, boating services, and a small aquarium near the
+                        lakeside.</p>
+                    <p>The lake is ringed by hotels, cafes and gardens. Visitors can hire paddle boats, rowboats or take
+                        a lakeside stroll at sunset. The island can be visited (check local timings) and provides a
+                        peaceful spot away from the shoreline bustle.</p>
+                    <p>Bhimtal works well as a quiet base for exploring nearby lakes (Naukuchiatal, Sattal), or as a
+                        one–two night stop for couples and families seeking calm.</p>
+                </section>
+
+                <section class="highlights" style="margin-top:14px;">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Large, serene lake with an island</li>
+                        <li>Boating — paddle, row and shikaras</li>
+                        <li>Small aquarium & park near the lake</li>
+                        <li>Quiet promenades and sunset viewpoints</li>
+                        <li>Close to Naukuchiatal and Sattal for day trips</li>
+                    </ul>
+                </section>
+
+                <div class="tips" aria-live="polite">
+                    <strong>Quick tips:</strong>
+                    <p style="margin-top:8px;">Early morning and late afternoon are best for calm water and birds. Check
+                        boat and island timings locally. Carry sunscreen and a light jacket for evenings.</p>
+                </div>
+
+                <section style="margin-top:16px;">
+                    <h2 class="section">Photos</h2>
+                    <div class="images" aria-hidden="false">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Bhimtal_lake_view_01.jpg"
+                            alt="Bhimtal lake view">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/b5/20/0d/bhimtal-lake-nainital.jpg?w=1000&h=1000&s=1"
+                            alt="Boating at Bhimtal">
+                    </div>
+                </section>
+
+                <section style="margin-top:18px;">
+                    <h2 class="section">Nearby</h2>
+                    <p class="muted">Naukuchiatal (6 km), Sattal (20 km), Nainital (22 km), Hanuman Garhi viewpoint.</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Avg time:</span> <span class="muted">2–4 hours (or overnight)</span></p>
+                    <p><span class="meta">Best season:</span> <span class="muted">Mar–Jun, Sep–Nov</span></p>
+                    <p><span class="meta">Entry:</span> <span class="muted">Public access; boating fees apply</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Airport:</strong> Pantnagar (~70 km)</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~35 km)</p>
+                    <p class="muted"><strong>Road:</strong> Frequent taxis/buses from Kathgodam/Nainital; driveable via
+                        well-maintained roads.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay & Food</h3>
+                    <ul class="list">
+                        <li>Lakefront hotels and guesthouses</li>
+                        <li>Cafes and family restaurants on the promenade</li>
+                        <li>Local bakeries and street snacks</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Bhimtal%20Booking" class="btn">Book Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#034f6b;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!-- File: outlet.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Outlet Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="outleet.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo">OC</div>
+        <div>
+          <h1>Outlet Registration</h1>
+          <p class="lead">Register your outlet — takes less than 2 minutes</p>
+        </div>
+      </div>
+      <div class="chip">Draft autosaved • 2m ago</div>
+    </header>
+
+    <form class="card" autocomplete="on" novalidate>
+
+      <!-- Outlet details -->
+      <fieldset class="section">
+        <div class="header-row">
+          <div>
+            <div class="title">Outlet Details</div>
+            <div class="subtitle">One step closer — fill the basic details</div>
+          </div>
+          <div class="hint">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zM11 11V7h2v6h-2zm0 4h2v2h-2v-2z" fill="#64748b"/>
+            </svg>
+            <span class="small muted">Keep PAN, Aadhaar & GST handy for verification</span>
+          </div>
+        </div>
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="outletType">Outlet Type</label>
+            <select id="outletType" required>
+              <option value="">Select</option>
+              <option>Restaurant</option>
+              <option>Resort</option>
+              <option>Hotel</option>
+              <option>Dhabha</option>
+              <option>Cafe</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="monthlyIncome">Monthly Income (approx)</label>
+            <select id="monthlyIncome" required>
+              <option value="">Select</option>
+              <option>&lt; 50k</option>
+              <option>50k - 1 Lakh</option>
+              <option>1 Lakh - 10 Lakh</option>
+              <option>10 Lakh - 25 Lakh</option>
+              <option>&gt; 25 Lakh</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="estYear">Established Year</label>
+            <input id="estYear" type="number" min="1900" max="2025" placeholder="e.g. 2015">
+            <div class="small muted">If you don't know exact year, give approximate.</div>
+          </div>
+
+          <div class="field verify-row">
+            <label for="pan">PAN Number</label>
+            <div style="display:flex;gap:8px;align-items:center;width:100%">
+              <input id="pan" type="text" placeholder="ABCDE1234F" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" style="flex:1;text-transform:uppercase" />
+              <button type="button" class="verify-btn" title="Verify PAN">Verify</button>
+            </div>
+            <div class="small muted">Format: 5 letters, 4 digits, 1 letter</div>
+          </div>
+
+          <div class="field verify-row">
+            <label for="gst">GSTIN (optional)</label>
+            <div style="display:flex;gap:8px;align-items:center;width:100%">
+              <input id="gst" type="text" placeholder="If applicable" style="flex:1" />
+              <button type="button" class="verify-btn" title="Verify GST">Verify</button>
+            </div>
+            <div class="small muted">Only add if registered for GST</div>
+          </div>
+
+          <div class="field verify-row">
+            <label for="aadhaar">Aadhaar Number</label>
+            <div style="display:flex;gap:8px;align-items:center;width:100%">
+              <input id="aadhaar" type="text" inputmode="numeric" maxlength="12" placeholder="12 digits" pattern="\d{12}" style="flex:1" />
+              <button type="button" class="verify-btn" title="Verify Aadhaar">Verify</button>
+            </div>
+            <div class="small muted">We never store full Aadhaar in plaintext</div>
+          </div>
+
+        </div>
+
+      </fieldset>
+
+      <div class="sep"></div>
+
+      <!-- Location -->
+      <fieldset class="section">
+        <legend class="section-title">Outlet Location</legend>
+
+        <div class="form-grid">
+
+          <div class="field">
+            <label for="district">Pincode</label>
+            <input type="text" placeholder="pincode">
+          </div>
+
+          <div class="field">
+            <label>District</label>
+            <select id="district">
+              <option value="">Select</option>
+            </select>
+          </div>
+
+          <div class="field row-span-3">
+            <label for="address">Street / Apartment / Flat No.</label>
+            <input id="address" type="text" placeholder="House no., street, building name">
+
+            <label for="landmark" style="margin-top:8px">Landmark</label>
+            <input id="landmark" type="text" placeholder="Nearby, e.g. opposite police station">
+
+            <div class="small muted" style="margin-top:6px">Tip: add a clear landmark to help customers find you.</div>
+          </div>
+
+        </div>
+      </fieldset>
+
+      <div class="sep"></div>
+
+      <!-- Contacts -->
+      <fieldset class="section">
+        <legend class="section-title">Contact Details</legend>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" inputmode="tel" maxlength="10" placeholder="10-digit mobile number">
+          </div>
+
+          <div class="field">
+            <label for="telephone">Telephone Number</label>
+            <input id="telephone" type="tel" placeholder="Optional landline">
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="you@company.com">
+          </div>
+
+          <div class="field">
+            <label for="website">Website URL (optional)</label>
+            <input id="website" type="url" placeholder="https://example.com">
+          </div>
+
+        </div>
+
+        <footer class="form-footer">
+
+          <div class="controls">
+            <button type="reset" class="btn btn-ghost">Reset</button>
+            <button type="button" class="btn btn-ghost">Save as draft</button>
+            <button type="button" class="btn btn-ghost">Back</button>
+            <button type="button" class="btn btn-primary" id="proceed2">Proceed</button>
+          </div>
+        </footer>
+
+      </fieldset>
+
+    </form>
+
+  </div>
+  <script src="code_district.js"></script>
+  <script src="districts.js"></script>
+  <script src="script2.js"></script>
+
+</body>
+</html>
+
+
+

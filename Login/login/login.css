@@ -1,0 +1,146 @@
+/* Theme variables */
+:root{
+  --nav-height: 64px;
+  --bg: #f4f7fb;
+  --primary: #0074D9;
+  --accent: #ffcc33;
+  --muted: #58606a;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(11,118,255,0.06);
+  --max-width: 840px;
+}
+
+/* Reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: linear-gradient(180deg,#eef6ff 0%,var(--bg) 100%);
+  color:#0f1724;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: var(--primary) !important;
+  box-shadow: 0 8px 20px rgba(7,84,153,0.12);
+  height: var(--nav-height);
+}
+.custom-navbar .navbar-brand, .custom-navbar .nav-link { color: #fff !important; font-weight:600; }
+.custom-navbar .nav-link:hover { color: var(--accent) !important; transition: color .18s ease; }
+.custom-navbar .navbar-toggler { border-color: rgba(255,255,255,0.12); }
+.custom-navbar .navbar-toggler-icon { filter: invert(1) contrast(1.2); }
+
+/* Page spacing (so fixed nav doesn't overlap) */
+.page { padding-top: calc(var(--nav-height) + 18px); min-height: calc(100vh - var(--nav-height)); }
+
+/* Center wrapper */
+.center-wrap {
+  min-height: calc(100vh - var(--nav-height) - 18px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 20px;
+}
+
+/* Form card */
+.form-card {
+  width:100%;
+  max-width:520px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.99));
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Header */
+.form-header h2 { margin:0 0 6px 0; font-size:1.25rem; }
+.muted { color:var(--muted); margin:0 0 6px 0; }
+
+/* Grid utilities */
+.grid { display:grid; gap:12px; margin-bottom:10px; }
+.single-col { grid-template-columns: 1fr; }
+
+/* Field styling */
+.field { display:flex; flex-direction:column; gap:6px; }
+.label-text { font-size:0.86rem; color:var(--muted); font-weight:600; }
+.field input {
+  height:44px;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid rgba(15,23,36,0.08);
+  font-size:0.95rem;
+  outline:none;
+  transition: box-shadow .14s ease, border-color .14s ease, transform .08s ease;
+  background:transparent;
+}
+
+/* Checkbox and auxiliary row */
+.row-aux {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:6px;
+}
+.checkbox { display:flex; align-items:center; gap:8px; color:var(--muted); font-size:0.95rem; }
+.checkbox input { width:16px; height:16px; }
+.forgot-link { color:var(--primary); text-decoration:none; font-size:0.9rem; }
+
+/* Focus / invalid */
+.field input:focus {
+  box-shadow: 0 10px 30px rgba(11,118,255,0.06);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+.field.invalid input {
+  border-color:#ff5d5d;
+  box-shadow: 0 10px 30px rgba(255,93,93,0.06);
+}
+
+/* Actions + buttons */
+.actions { display:flex; gap:12px; margin-top:6px; flex-wrap:wrap; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border-radius:10px; cursor:pointer; font-weight:600; border:0; }
+.btn.primary { background:var(--primary); color:#fff; box-shadow: 0 10px 24px rgba(11,118,255,0.12); }
+.btn.ghost { background:transparent; color:var(--primary); border:1px solid rgba(11,118,255,0.12); }
+
+/* Divider */
+.divider { display:flex; align-items:center; gap:12px; margin:18px 0; }
+.divider::before, .divider::after { content:""; flex:1; height:1px; background: rgba(15,23,36,0.04); border-radius:2px; }
+.divider span { font-size:0.9rem; color:var(--muted); padding:0 8px; }
+
+/* Social login */
+.social-area { margin-top:6px; }
+.social-login {
+  width:100%;
+  text-align:center;
+  padding:10px;
+  border-radius:10px;
+  border:1px dashed rgba(15,23,36,0.06);
+  background:transparent;
+  font-weight:600;
+  color:var(--muted);
+  cursor:pointer;
+}
+
+/* Hint */
+.hint { color:var(--muted); font-size:0.86rem; margin-top:8px; }
+
+/* UX tweaks */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance:none; margin:0; }
+
+/* Responsive adjustments */
+@media (min-width:600px){
+  :root{ --nav-height: 64px; }
+  .form-card { padding:22px; max-width:600px; }
+}
+@media (min-width:980px){
+  :root{ --nav-height: 68px; }
+  .form-card { padding:28px; max-width:680px; }
+}
+@media (max-width:420px){
+  :root{ --nav-height: 56px; }
+  .forgot-link { font-size:0.85rem; }
+}

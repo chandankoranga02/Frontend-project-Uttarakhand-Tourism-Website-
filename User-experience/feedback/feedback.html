@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback — We value your opinion</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+  <main class="page">
+    <form class="card feedback-card" action="#" method="post" novalidate>
+      <header class="card-header">
+        <h1>Your feedback matters</h1>
+        <p class="sub">Tell us what you liked, what to improve — be honest.</p>
+      </header>
+
+      <fieldset class="row">
+        <label for="name" class="label">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+      </fieldset>
+
+      <div class="row two-col">
+        <fieldset>
+          <label for="phone" class="label">Mobile (optional)</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="e.g. 9876543210" pattern="[0-9]{10}" />
+        </fieldset>
+
+        <fieldset>
+          <label for="email" class="label">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+        </fieldset>
+      </div>
+
+      <fieldset class="row">
+        <legend class="label">What did you find useful? (choose multiple)</legend>
+
+        <div class="checkbox-grid">
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="ui" />
+            <span>UI / Visual design</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="performance" />
+            <span>Performance / Speed</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="features" />
+            <span>Features</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="support" />
+            <span>Customer support</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="security" />
+            <span>Security / Privacy</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="docs" />
+            <span>Documentation / Help</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="price" />
+            <span>Pricing / Value</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="useful[]" value="other" />
+            <span>Other</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="row">
+        <label class="label">Overall rating</label>
+        <div class="rating" aria-label="Overall rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Excellent">★</label>
+          <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very good">★</label>
+          <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">★</label>
+          <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">★</label>
+          <input type="radio" id="star1" name="rating" value="1" checked /><label for="star1" title="Terrible">★</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="row">
+        <label for="comments" class="label">Comments / Suggestions</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Tell us anything that will help us improve..."></textarea>
+      </fieldset>
+
+      <footer class="card-footer">
+        <button type="submit" class="btn">Submit feedback</button>
+        <p class="hint">We read every submission — thank you.</p>
+      </footer>
+    </form>
+  </main>
+</body>
+</html>

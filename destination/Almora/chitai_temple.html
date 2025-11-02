@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chitai — Golu Devta Temple, Almora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #fbfbfc;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #f6d365, #fda085);
+            color: #2b1300;
+            padding: 28px 18px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 160, 133, 0.12);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .95;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(43, 19, 0, 0.08);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #2b1300;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 10, 10, 0.04);
+        }
+
+        h2.section {
+            color: #b24300;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #ffe6d1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #fff7f2;
+            border: 1px solid #ffe6d1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side {
+            position: relative;
+            top: 0;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #793100;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .muted {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #b24300;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(178, 67, 0, 0.14);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.4rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Chitai — Golu Devta Temple</h1>
+            <p>Famous hill-temple dedicated to Golu Devta — known for the bell-covered shrine and thousands of
+                legal-style wish petitions.</p>
+            <div class="badges">
+                <div class="badge">Spiritual</div>
+                <div class="badge">Culture</div>
+                <div class="badge">Almora</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Chitai (near Almora) hosts the revered Golu Devta Temple — a unique local deity worship where
+                        devotees tie bells, submit handwritten petitions, and believe in quick justice and
+                        wish-fulfillment. The temple sits on a small hill, offering views of the surrounding Kumaon
+                        hills and terraced fields.</p>
+                    <p>The atmosphere is rustic and lively: brass bells of all sizes hang from the trees and roof, paper
+                        petitions flutter around, and local priests (pujaris) often mediate ritual offerings. The idol
+                        represents Golu Devta (a folk incarnation of Shiva), and the temple blends tribal-cum-Hindu
+                        traditions.</p>
+                    <p>Chitai is a short drive from Almora town and works well as a half-day cultural stop combined with
+                        other Almora attractions like Bright End Corner and Kasar Devi.</p>
+                </section>
+
+                <section class="highlights" style="margin-top:14px;">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Thousands of bells suspended across the complex</li>
+                        <li>Devotees submit handwritten petitions (often seeking justice or boons)</li>
+                        <li>Local festivals and vibrant rural rituals</li>
+                        <li>Short, accessible hilltop shrine with scenic views</li>
+                        <li>Strong cultural flavour — great for photos and anthropological interest</li>
+                    </ul>
+                </section>
+
+                <div class="tips" aria-live="polite">
+                    <strong>Quick tips:</strong>
+                    <p style="margin-top:8px;">Respect local customs — don’t remove or play with bells. Carry small
+                        offerings and cash for priests. Peak crowd: mornings and festival days. Avoid loud behaviour;
+                        photography is allowed but be polite during rituals.</p>
+                </div>
+
+                <section style="margin-top:16px;">
+                    <h2 class="section">Photos</h2>
+                    <div class="images" aria-hidden="false">
+                        <img src="https://www.sacredyatra.com/images/temples/chitai-golu-devta-temple.webp"
+                            alt="Golu Devta Temple bells">
+                        <img src="https://www.nainitalcorbetttourism.com/images/nainital-tourism/chitai-golu-devta-temple.jpg"
+                            alt="Chitai temple view and hillscape">
+                    </div>
+                </section>
+
+                <section style="margin-top:18px;">
+                    <h2 class="section">Nearby</h2>
+                    <p class="muted">Almora market (6–8 km), Bright End Corner viewpoint, Kasar Devi Temple, Binsar
+                        Wildlife Sanctuary (drive).</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Avg time:</span> <span class="muted">45–90 minutes</span></p>
+                    <p><span class="meta">Timings:</span> <span class="muted">5:00 AM – 8:00 PM (typical; varies by
+                            season)</span></p>
+                    <p><span class="meta">Entry:</span> <span class="muted">Free (donations welcome)</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>From Almora:</strong> ~6–8 km — taxi or local bus, short uphill walk to the
+                        shrine.</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~100 km)</p>
+                    <p class="muted"><strong>Nearest Airport:</strong> Pantnagar (~120 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay & Food</h3>
+                    <ul class="list">
+                        <li>Guesthouses & homestays in Almora</li>
+                        <li>Local eateries serving Kumaoni cuisine</li>
+                        <li>Carry water and small snacks if combining multiple stops</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Chitai%20Golu%20Devta%20Visit" class="btn">Plan
+                        Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#793100;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

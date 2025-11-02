@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f7f9;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+.site-photo {
+    max-width: 200px;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.info-list li {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.info-list li strong {
+    color: #2575fc;
+}
+
+.timeline-card, .chatbot-card {
+    background: linear-gradient(135deg, #f1d42c, #ed3300);
+    color: #000000;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.timeline-card:hover, .chatbot-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        text-align: center;
+    }
+    .info-list li {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,125 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR CONTAINER */
+#navbar {
+  width: 100%;
+  background-color: #c9f2ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* LEFT LINKS */
+#nav-1 {
+  display: flex;
+  gap: 1.2rem;
+}
+
+#nav-1 a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 8px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+#nav-1 a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* SEARCH SECTION */
+#nav-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 500px;
+}
+
+#nav-2 form {
+  display: flex;
+  width: 100%;
+}
+
+#nav-2-1 {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  padding: 0 10px;
+  outline: none;
+}
+
+#nav-2 button {
+  width: 45px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  background: white;
+  cursor: pointer;
+}
+
+#nav-2 button:hover {
+  background: #eee;
+}
+
+/* LOGIN / SIGNUP BUTTONS */
+#nav-3 {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 90px;
+  height: 38px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #ddd;
+}
+
+#signup {
+  background-color: rgb(100, 126, 231);
+  color: white;
+}
+
+#signup:hover {
+  background-color: rgb(80, 105, 220);
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 900px) {
+  #nav-1 {
+    display: none;
+  }
+
+  #nav-2 {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav-2 {
+    display: none;
+  }
+
+  #nav-3 .nav-btn {
+    width: 80px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,472 @@
+/* payment.css — final, complete, responsive stylesheet */
+
+/* === Root variables === */
+:root {
+    --bg-1: #f0f4f7;
+    --bg-2: #d9e2ec;
+    --card-bg: #ffffff;
+    --muted: #64748b;
+    --accent: #0077b6;
+    --accent-dark: #005f86;
+    --input-border: #6b7280;
+    --shadow: 0 6px 20px rgba(8, 24, 48, 0.08);
+    --danger: #ef4444;
+    --success: #16a34a;
+    --card-pad: 18px;
+    --file-bg: #fbfdff;
+    --file-border: rgba(15, 23, 42, 0.06);
+}
+
+/* === Base reset & body === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 28px 20px;
+    line-height: 1.4;
+}
+
+/* === Container + card === */
+.container {
+    width: 70vw;
+    max-width: 980px;
+    min-width: 320px;
+    margin: 28px auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+/* === Header row === */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* === Form grid === */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 6px;
+}
+
+/* === Field styling === */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field label {
+    font-weight: 600;
+    color: #0b2540;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid var(--input-border);
+    font-size: 0.98rem;
+    outline: none;
+    transition: box-shadow .18s ease, border-color .18s ease, transform .08s ease;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 6px 20px rgba(3, 105, 161, 0.08);
+}
+
+/* === Small text === */
+.small {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.small.muted {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* === Verify row utility === */
+.verify-row>div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* === Buttons & footer controls === */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(2, 6, 23, 0.06);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.form-footer .btn-primary {
+    padding: 12px 18px;
+}
+
+@media (max-width:480px) {
+    .controls {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* === Section / fieldset styling === */
+.section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    padding: 20px;
+    margin: 18px 0;
+}
+
+/* === Utilities === */
+.sep {
+    height: 12px;
+}
+
+.row-span-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+/* === File input & thumbnails === */
+input[type="file"] {
+    background: var(--file-bg);
+    border: 1px dashed var(--file-border);
+    padding: 12px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.file-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.file-name {
+    font-size: 0.92rem;
+    color: #0b2540;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.file-size {
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+
+.thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumb {
+    background: #fff;
+    border: 1px solid rgba(2, 6, 23, 0.06);
+    border-radius: 8px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.thumb img {
+    width: 100%;
+    height: 86px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.thumb .tlabel {
+    font-size: 0.8rem;
+    color: #0f172a;
+}
+
+.thumb .tcontrols {
+    display: flex;
+    gap: 6px;
+}
+
+.thumb button {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(2, 6, 23, 0.06);
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upload-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(2, 6, 23, 0.06);
+    overflow: hidden;
+}
+
+.progress>i {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    transition: width .25s ease;
+}
+
+/* Fee display */
+#feeDisplay {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--accent);
+    margin-top: 6px;
+}
+
+/* === Payment radio buttons === */
+[role="radiogroup"] label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(2, 6, 23, 0.08);
+    margin-right: 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    min-height: 38px;
+    background: #f9fafb;
+}
+
+[role="radiogroup"] input[type="radio"] {
+    accent-color: var(--accent);
+    margin: 0;
+}
+
+/* === Checkbox alignment === */
+.field label input[type="checkbox"] {
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+.field label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: #0f172a;
+}
+
+/* === Input success/error messages === */
+.input-error {
+    color: var(--danger);
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.input-success {
+    color: var(--success);
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+/* === Accept TnC margin fix === */
+#acceptTnc {
+    margin: 0;
+}
+
+/* === Preview modal === */
+.preview-modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(2, 6, 23, 0.45);
+    z-index: 1200;
+    padding: 18px;
+}
+
+.preview-box {
+    width: min(920px, 96vw);
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 12px 48px rgba(2, 6, 23, 0.32);
+    max-height: 86vh;
+    overflow: auto;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.preview-body {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 14px;
+}
+
+@media(max-width:860px) {
+    .preview-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === Responsive tweaks === */
+@media(max-width:980px) {
+    .container {
+        width: 85vw;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+}
+
+@media(max-width:720px) {
+    .container {
+        width: 95vw;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:480px) {
+    .thumb-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .file-name {
+        max-width: 120px;
+    }
+
+    .file-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* === Accessibility & touch === */
+button:focus-visible,
+input[type="file"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(0, 119, 182, 0.12);
+    outline-offset: 3px;
+}
+
+input,
+select,
+button {
+    touch-action: manipulation;
+}
+

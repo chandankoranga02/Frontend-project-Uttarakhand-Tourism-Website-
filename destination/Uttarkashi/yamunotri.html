@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Yamunotri Temple — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #fff8f0;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ffecd2, #fcb69f);
+            color: #222;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 8px 28px rgba(252, 182, 159, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .9;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:940px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        h2.section {
+            color: #e67e22;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #ffd8b1;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #fff4e6;
+            border: 1px solid #ffd8b1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: #e67e22;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #e67e22;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(230, 126, 34, 0.25);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Yamunotri Temple</h1>
+            <p>The sacred temple of Goddess Yamuna, located at the origin of the Yamuna River, in the Uttarkashi
+                district of Uttarakhand.</p>
+            <div class="badges">
+                <div class="badge">Spiritual</div>
+                <div class="badge">Pilgrimage</div>
+                <div class="badge">Scenic</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Yamunotri Temple is a revered shrine dedicated to Goddess Yamuna. Situated amidst high mountains
+                        and hot water springs, the temple sees devotees undertaking a challenging trek or pony ride from
+                        Janki Chatti. Pilgrims perform rituals and offer prayers at the temple and at nearby hot
+                        springs.</p>
+                    <p>The temple has a simple yet spiritual architecture, blending seamlessly with the natural
+                        surroundings. The trek offers beautiful Himalayan vistas, snow-capped peaks in winter, and
+                        alpine meadows in summer.</p>
+                    <p>The temple is part of the Char Dham Yatra and is visited along with Gangotri, Kedarnath, and
+                        Badrinath.</p>
+                </section>
+
+                <section class="highlights">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Origin of River Yamuna</li>
+                        <li>Hot water springs near temple</li>
+                        <li>Challenging yet scenic trek from Janki Chatti</li>
+                        <li>Spiritual rituals and pilgrimages</li>
+                        <li>Best visited in summer months</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Travel Tips:</strong>
+                    <p>Best visited May – June or Sept – Oct. Carry trekking shoes, warm clothing, water, and snacks.
+                        Avoid heavy snowfall months. Respect local customs and rituals.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photos</h2>
+                    <div class="images">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Yamunotri_temple_and_ashram.jpg"
+                            alt="Yamunotri Temple view">
+                        <img src="https://blogs.tripzygo.in/wp-content/uploads/2025/04/yamunotri-temple.png"
+                            alt="Hot water spring near Yamunotri">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section">Nearby Attractions</h2>
+                    <p class="muted">Janki Chatti, Hanuman Chatti, Bandarpunch Peak, Yamunotri Trek</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Season:</span> <span class="muted">May – June, Sept – Oct</span></p>
+                    <p><span class="meta">Region:</span> <span class="muted">Uttarkashi district, Uttarakhand</span></p>
+                    <p><span class="meta">Activities:</span> <span class="muted">Pilgrimage, Trekking,
+                            Sightseeing</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Airport:</strong> Jolly Grant, Dehradun (~225 km)</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Rishikesh / Haridwar</p>
+                    <p class="muted"><strong>Road:</strong> Drive to Janki Chatti; trek/pony ride to temple</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay & Food</h3>
+                    <ul class="list">
+                        <li>Guesthouses in Janki Chatti and nearby villages</li>
+                        <li>Limited dhabas serving local food</li>
+                        <li>Basic facilities along trekking route</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Yamunotri%20Temple%20Booking" class="btn">Book
+                        Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#b45f17;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

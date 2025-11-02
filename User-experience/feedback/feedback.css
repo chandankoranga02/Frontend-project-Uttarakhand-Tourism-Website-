@@ -1,0 +1,201 @@
+/* feedback.css
+   Modern responsive feedback form
+   Uses system fonts + Inter for nicer typography
+*/
+
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: #0f62fe; /* blue */
+  --accent: #7c3aed;  /* purple accent */
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(17,24,39,0.08);
+  --gap: 18px;
+  --max-width: 920px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg, #eef2ff 0%, var(--bg) 40%);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:32px 20px;
+}
+
+/* center layout */
+.page{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:calc(100vh - 64px);
+}
+
+/* card */
+.card{
+  width:100%;
+  max-width:var(--max-width);
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px;
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* header */
+.card-header h1{
+  margin:0 0 6px 0;
+  font-weight:700;
+  font-size:1.35rem;
+  letter-spacing: -0.2px;
+}
+
+.card-header .sub{
+  margin:0;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* rows and fields */
+.row{
+  margin-top:var(--gap);
+  display:block;
+}
+
+.label{
+  display:block;
+  font-size:0.88rem;
+  color:#111827;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+/* inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(15,23,42,0.08);
+  background: #fff;
+  font-size:0.96rem;
+  outline:none;
+  transition:box-shadow .15s, border-color .12s;
+}
+
+input:focus, textarea:focus{
+  box-shadow: 0 8px 24px rgba(15,23,42,0.06);
+  border-color: rgba(124,58,237,0.6);
+}
+
+/* two-column layout for larger screens */
+.two-col{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:14px;
+}
+
+@media (min-width:720px){
+  .two-col{ grid-template-columns: 1fr 1fr; }
+}
+
+/* checkbox grid */
+.checkbox-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:10px;
+}
+
+@media (min-width:720px){
+  .checkbox-grid{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+}
+
+.check{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: linear-gradient(180deg, rgba(124,58,237,0.03), rgba(15,23,42,0.01));
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid rgba(15,23,42,0.03);
+  font-weight:500;
+  font-size:0.92rem;
+}
+
+.check input[type="checkbox"]{
+  width:18px;
+  height:18px;
+  accent-color: var(--accent);
+}
+
+/* rating stars */
+.rating{
+  display:inline-flex;
+  gap:6px;
+  align-items:center;
+}
+
+.rating input[type="radio"]{
+  display:none;
+}
+
+.rating label{
+  cursor:pointer;
+  font-size:1.45rem;
+  line-height:1;
+  transition: transform .12s ease, opacity .12s;
+  opacity:0.45;
+  user-select:none;
+}
+
+/* when corresponding radio is checked => highlight star and previous stars */
+.rating input[type="radio"]:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label{
+  transform: translateY(-3px);
+  opacity:1;
+  color: var(--primary);
+}
+
+/* keep footer aligned */
+.card-footer{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:22px;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+}
+
+.btn{
+  background: linear-gradient(90deg, var(--primary), #5b8cff);
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+}
+
+.btn:active{ transform: translateY(1px); }
+.btn:focus{ outline:3px solid rgba(15,99,255,0.15); }
+
+/* hint text */
+.hint{
+  color:var(--muted);
+  font-size:0.9rem;
+  margin:0;
+}
+
+/* responsiveness tweak */
+@media (max-width:420px){
+  .card{ padding:18px; border-radius:12px; }
+  .checkbox-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); gap:8px; }
+}

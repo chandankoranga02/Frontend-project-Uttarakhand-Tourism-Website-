@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hemkund Sahib — Chamoli, Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #eef6fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #cbe8f9, #87b9e4);
+            color: #0b2e4e;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 8px 28px rgba(20, 80, 160, 0.18);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .9;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:940px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        h2.section {
+            color: #176b9d;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #b6dcf6;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #e8f5fc;
+            border: 1px solid #cae4f8;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: #176b9d;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #176b9d;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(23, 107, 157, 0.25);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Hemkund Sahib</h1>
+            <p>A sacred Sikh shrine perched beside a pristine glacial lake at 4,632 meters — a symbol of purity,
+                devotion, and peace.</p>
+            <div class="badges">
+                <div class="badge">Spiritual</div>
+                <div class="badge">High-Altitude</div>
+                <div class="badge">Pilgrimage</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Hemkund Sahib, also known as Gurudwara Sri Hemkunt Sahib Ji, lies in the Chamoli district of
+                        Uttarakhand at an altitude of 4,632 meters. Surrounded by seven snow-capped peaks, it is one of
+                        the highest Gurudwaras in the world, revered deeply by Sikhs and Hindus alike.</p>
+                    <p>The lake beside the shrine — Hemkund (meaning “Lake of Snow”) — remains frozen for half the year.
+                        Pilgrims trek 6 km from Ghangaria through steep but scenic trails filled with alpine flowers,
+                        streams, and crisp mountain air. The entire setting feels divine and untouched.</p>
+                    <p>The Gurudwara remains open only from June to early October due to extreme winter conditions. It’s
+                        a place where faith meets natural majesty — the reflection of the peaks in the lake is one of
+                        the most breathtaking sights in the Himalayas.</p>
+                </section>
+
+                <section class="highlights">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Situated beside a glacial lake at 4,632 meters.</li>
+                        <li>Dedicated to Guru Gobind Singh Ji’s meditation site.</li>
+                        <li>Access via a scenic 6 km trek from Ghangaria.</li>
+                        <li>Surrounded by seven majestic peaks.</li>
+                        <li>Open for limited months (June–Oct).</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Quick Tips:</strong>
+                    <p>Carry warm layers even in summer. Stay overnight at Ghangaria before starting the trek. Keep
+                        altitude sickness precautions. Maintain silence and respect near the Gurudwara premises.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photos</h2>
+                    <div class="images">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-hemkund-sahib-badrinath-uttarkhand-attr-hero?qlt=82&ts=1726646517458"
+                            alt="Hemkund Sahib Gurudwara">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQypXsGAsdq540084AQZt_3w6tFUY7C9XWWkg&s"
+                            alt="Hemkund Lake">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section">Nearby Attractions</h2>
+                    <p class="muted">Valley of Flowers (5 km), Ghangaria base village, Joshimath (38 km), Badrinath (42
+                        km).</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Altitude:</span> <span class="muted">4,632 m</span></p>
+                    <p><span class="meta">Best Season:</span> <span class="muted">June – Oct</span></p>
+                    <p><span class="meta">Trek Length:</span> <span class="muted">6 km from Ghangaria</span></p>
+                    <p><span class="meta">Region:</span> <span class="muted">Chamoli, Uttarakhand</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Base Point:</strong> Govindghat (275 km from Rishikesh)</p>
+                    <p class="muted"><strong>Trek Start:</strong> Ghangaria (13 km from Govindghat)</p>
+                    <p class="muted"><strong>Nearest Airport:</strong> Jolly Grant, Dehradun (292 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay & Food</h3>
+                    <ul class="list">
+                        <li><strong>Gurudwara Langar</strong> — Free meals for all pilgrims.</li>
+                        <li><strong>GMVN Ghangaria</strong> — Budget stay.</li>
+                        <li><strong>Valley View Guesthouse</strong> — Mid-range near trek start.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Hemkund%20Sahib%20Booking" class="btn">Book Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#0b2e4e;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #uk-heading { font-size: 2.5rem; }
+    #uk-subheading { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+    #uk-heading { font-size: 1.8rem; }
+    #uk-subheading { font-size: 1rem; }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  #about img {
+    width: 70%;
+    max-width: 320px;
+  }
+
+  #about h1 {
+    font-size: 2.2rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dest-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinations-container {
+        grid-template-columns: 1fr;
+    }
+    .dest-buttons {
+        flex-direction: column;
+    }
+    .dest-buttons button {
+        width: 100%;
+    }
+}
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .timeline::before { left: 36px; }
+  .timeline-year { min-width: 72px; height: 72px; font-size: 1.25rem; }
+  .timeline-year::after { left: -40px; width: 14px; height:14px; }
+  .timeline-content { padding: 16px; font-size: 0.98rem; }
+}
+
+@media (max-width: 600px) {
+  /* stack vertically on small screens */
+  .timeline::before { left: 20px; }
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .timeline-year {
+    width: 64px;
+    height: 64px;
+    font-size: 1.05rem;
+  }
+  .timeline-year::after { display: none; } /* no connector dot on stacked view */
+  .timeline-content {
+    width: 100%;
+    padding: 14px;
+    margin-left: 6px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  .region-img {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .region-content h3 {
+    font-size: 1.2rem;
+  }
+  .region-desc,
+  .region-points,
+  .contrib-list li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  #container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #links, #information {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

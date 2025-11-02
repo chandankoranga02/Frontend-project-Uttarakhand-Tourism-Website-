@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vijaypur Viewpoint — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #fffaf0;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ffdd99, #ffbb33);
+            color: #663300;
+            text-align: center;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(170, 110, 50, 0.12);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: .95;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(102, 51, 0, 0.1);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: .85rem;
+            color: #663300;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        h2.section {
+            color: #994d00;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #ffe6b3;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #fff7e6;
+            border: 1px solid #ffd699;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #804000;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #804000;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(128, 64, 0, 0.2);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Vijaypur Viewpoint</h1>
+            <p>Panoramic sunset viewpoint overlooking terraced valleys, distant snow-capped peaks and serene river
+                bends.</p>
+            <div class="badges">
+                <div class="badge">Sunset Spot</div>
+                <div class="badge">Photography</div>
+                <div class="badge">Scenic</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section>
+                    <h2 class="section">Overview</h2>
+                    <p>Vijaypur Viewpoint is a tranquil hilltop spot in Uttarakhand offering breathtaking views of
+                        surrounding Himalayan ranges. The location is perfect for evening visits when the setting sun
+                        casts golden hues across terraced fields and flowing rivers below.</p>
+                    <p>The viewpoint is moderately accessible by local roads with a short walk uphill. Visitors can
+                        enjoy quiet contemplation, photography, and birdwatching in the surrounding pine and
+                        rhododendron groves. Even a brief stop during golden hour produces memorable landscape shots.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Sunset vistas over terraced Himalayan valleys</li>
+                        <li>Panoramic photography opportunities</li>
+                        <li>Short hillwalks and pine groves around viewpoint</li>
+                        <li>Less crowded than main town viewpoints</li>
+                        <li>Accessible for families and light trekkers</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Visitor Tips:</strong>
+                    <p>Arrive 30–45 min before sunset for best views. Carry light jacket and water. Avoid plastic and
+                        leave no litter. Morning visits also offer a misty valley experience.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photo Gallery</h2>
+                    <div class="images">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZyxCPKrQ2MDcEL47XyiBI6RCMy14v9zbYJg&s"
+                            alt="Vijaypur Viewpoint Sunset">
+                        <img src="https://avathioutdoors.gumlet.io/travelGuide/dev/binsar77474.jpg"
+                            alt="Terraced hills and river">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section">Nearby Attractions</h2>
+                    <p>Combine with local village walks, nearby temples, or short treks to get a mix of natural scenery
+                        and cultural exposure.</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Time:</span> <span class="muted">Oct–Mar (clear skies)</span></p>
+                    <p><span class="meta">Accessibility:</span> <span class="muted">Short uphill walk from road</span>
+                    </p>
+                    <p><span class="meta">Photography:</span> <span class="muted">Golden hour recommended</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Town:</strong> Pauri (~25 km)</p>
+                    <p class="muted"><strong>Road:</strong> Accessible via local motorable road + 10 min walk</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kotdwar (~70 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Facilities</h3>
+                    <ul class="list">
+                        <li>Parking at base of viewpoint</li>
+                        <li>Local tea stalls nearby</li>
+                        <li>Benches and small rest area at viewpoint</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Vijaypur%20Viewpoint" class="btn">Plan Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#663300;">Send Enquiry</a>
+                    <p class="small">Phone: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

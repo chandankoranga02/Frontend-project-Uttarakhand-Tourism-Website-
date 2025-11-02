@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pithoragarh Fort — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #fdf6f0;
+            color: #1b1b1b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ffd1b3, #ff9966);
+            color: #663300;
+            text-align: center;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(102, 51, 0, 0.12);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: .95;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(102, 51, 0, 0.1);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: .85rem;
+            color: #663300;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        h2.section {
+            color: #804000;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #ffe0cc;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #fff3e6;
+            border: 1px solid #ffd4b3;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #663300;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #663300;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 51, 0, 0.2);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pithoragarh Fort</h1>
+            <p>Historic fort offering panoramic views of Pithoragarh town and surrounding Himalayan ranges.</p>
+            <div class="badges">
+                <div class="badge">Historic</div>
+                <div class="badge">Photography</div>
+                <div class="badge">Hilltop View</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section>
+                    <h2 class="section">Overview</h2>
+                    <p>Pithoragarh Fort is a historic structure perched atop a hill overlooking the Pithoragarh valley.
+                        Constructed centuries ago, it has witnessed multiple rulers and offers a glimpse into the
+                        region’s strategic importance in Himalayan history. The fort walls, old gates, and small shrines
+                        inside make it an interesting cultural and architectural spot.</p>
+                    <p>Visitors enjoy a moderate uphill walk to reach the fort, which also provides excellent views of
+                        terraced fields, rivers, and snow-capped peaks in the distance. Photographers and history
+                        enthusiasts especially enjoy this location for both landscapes and architecture.</p>
+                </section>
+
+                <section>
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Historic hilltop fort with old architecture</li>
+                        <li>Panoramic views of Pithoragarh valley</li>
+                        <li>Short uphill walk, family-friendly</li>
+                        <li>Photography and cultural experience</li>
+                        <li>Nearby small temples and shrines</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Visitor Tips:</strong>
+                    <p>Wear comfortable shoes for uphill walking. Early mornings and late afternoons offer better light
+                        and fewer crowds. Carry water and avoid littering the historic site.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photo Gallery</h2>
+                    <div class="images">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuOxzR3XnzPO7HjXAn5t_p1_b4derHVMGoRQ&s"
+                            alt="Pithoragarh Fort">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp4PJKFup8W4MAnFCEFZsrlou9wbfENsEsgg&s"
+                            alt="Valley view from Pithoragarh Fort">
+                    </div>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Time:</span> <span class="muted">Mar–Jun & Sep–Nov</span></p>
+                    <p><span class="meta">Visit Duration:</span> <span class="muted">1–2 hours</span></p>
+                    <p><span class="meta">Entry Fee:</span> <span class="muted">Free</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Town:</strong> Pithoragarh (Fort in town)</p>
+                    <p class="muted"><strong>Road:</strong> Accessible via local roads; short uphill walk to main fort
+                    </p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~280 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Facilities</h3>
+                    <ul class="list">
+                        <li>Small tea stalls near base</li>
+                        <li>Benches and seating at fort top</li>
+                        <li>Local guides for history and architecture</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Pithoragarh%20Fort" class="btn">Plan Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#663300;">Send Enquiry</a>
+                    <p class="small">Phone: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

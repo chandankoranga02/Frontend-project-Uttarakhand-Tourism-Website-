@@ -1,0 +1,155 @@
+/* complaint.css
+   Matches visual language of your feedback form.
+   Responsive, accessible, no-JS required.
+*/
+
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: #0f62fe;
+  --accent: #7c3aed;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(17,24,39,0.08);
+  --gap: 18px;
+  --max-width: 920px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg, #f8fafc 0%, var(--bg) 40%);
+  color:#0f172a;
+  padding:32px 20px;
+}
+
+/* center layout */
+.page{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:calc(100vh - 64px);
+}
+
+/* card */
+.card{
+  width:100%;
+  max-width:var(--max-width);
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px;
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+.card-header h1{
+  margin:0 0 6px 0;
+  font-weight:700;
+  font-size:1.35rem;
+}
+
+.card-header .sub{
+  margin:0;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* rows */
+.row{ margin-top:var(--gap); display:block; }
+
+.label{
+  display:block;
+  font-size:0.88rem;
+  color:#111827;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+/* inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+input[type="file"]{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid rgba(15,23,42,0.08);
+  background: #fff;
+  font-size:0.96rem;
+  outline:none;
+  transition:box-shadow .15s, border-color .12s;
+}
+
+input:focus, textarea:focus, select:focus{
+  box-shadow: 0 8px 24px rgba(15,23,42,0.06);
+  border-color: rgba(124,58,237,0.6);
+}
+
+/* two-column layout */
+.two-col{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:14px;
+}
+
+@media (min-width:720px){
+  .two-col{ grid-template-columns: 1fr 1fr; }
+}
+
+/* radio row */
+.radio-row{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.radio{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background: linear-gradient(180deg, rgba(15,23,42,0.01), rgba(124,58,237,0.02));
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid rgba(15,23,42,0.03);
+  font-weight:600;
+  font-size:0.92rem;
+}
+
+.radio input[type="radio"]{ width:16px; height:16px; accent-color: var(--accent); }
+
+/* footer */
+.card-footer{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:22px;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+}
+
+.btn{
+  background: linear-gradient(90deg, var(--primary), #5b8cff);
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+}
+
+.btn:active{ transform: translateY(1px); }
+.btn:focus{ outline:3px solid rgba(15,99,255,0.15); }
+
+.hint{ color:var(--muted); font-size:0.9rem; margin:0; }
+.small{ font-size:0.85rem; color:var(--muted); margin-top:6px; }
+
+/* responsiveness tweak */
+@media (max-width:420px){
+  .card{ padding:18px; border-radius:12px; }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ukhimath — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #fdf8f6;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #f6d365, #fda085);
+            color: #222;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 8px 28px rgba(253, 160, 133, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .9;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.35);
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:940px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        h2.section {
+            color: #b65d29;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #f7c5a0;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #fff4f0;
+            border: 1px solid #f7c5a0;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            color: #b65d29;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #b65d29;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(182, 93, 41, 0.25);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Ukhimath</h1>
+            <p>A sacred town in Garhwal, Uttarakhand, Ukhimath serves as the winter seat of the Kedarnath deity and a
+                spiritual hub for pilgrims.</p>
+            <div class="badges">
+                <div class="badge">Spiritual</div>
+                <div class="badge">Pilgrimage</div>
+                <div class="badge">Culture</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Ukhimath is a small town in Rudraprayag district, known for its winter shrine of Kedarnath temple
+                        deity. Devotees visit the town during winter months when the Kedarnath shrine is closed due to
+                        snow.</p>
+                    <p>The town is dotted with temples, offering a glimpse into Garhwal’s spiritual and architectural
+                        traditions. Surrounded by hills and rivers, Ukhimath provides serene landscapes and a peaceful
+                        atmosphere for visitors.</p>
+                    <p>Facilities are basic but sufficient, with guesthouses, dhabas, and local markets catering to
+                        pilgrims. Accessibility is by road from Rudraprayag and nearby towns.</p>
+                </section>
+
+                <section class="highlights">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Winter seat of Kedarnath deity</li>
+                        <li>Garhwal temple architecture and culture</li>
+                        <li>Peaceful town with scenic surroundings</li>
+                        <li>Ideal for short spiritual visits</li>
+                        <li>Local festivals and rituals attract devotees</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Travel Tips:</strong>
+                    <p>Best visited March to November for comfortable weather. Respect local customs. Carry light
+                        woolens in winter. Photography allowed with consent near temples.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photos</h2>
+                    <div class="images">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcmWy6ihRVcZzsu76kxOguXkWDYaP_Lc5qQ&s"
+                            alt="Ukhimath town view">
+                        <img src="https://thetempleguru.com/wp-content/uploads/2024/08/Ukhimath-Omkareshwar-Temple.jpg"
+                            alt="Ukhimath temple view">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section">Nearby Attractions</h2>
+                    <p class="muted">Kedarnath, Guptkashi, Rudraprayag, Chopta</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Season:</span> <span class="muted">March – November</span></p>
+                    <p><span class="meta">Region:</span> <span class="muted">Rudraprayag district, Uttarakhand</span>
+                    </p>
+                    <p><span class="meta">Activities:</span> <span class="muted">Pilgrimage, Sightseeing, Spiritual
+                            Visits</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Airport:</strong> Jolly Grant, Dehradun (~210 km)</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Rishikesh / Haridwar</p>
+                    <p class="muted"><strong>Road:</strong> Accessible via Rudraprayag; local taxis available</p>
+                </div>
+
+                <div class="card">
+                    <h3>Stay & Food</h3>
+                    <ul class="list">
+                        <li>Guesthouses and lodges in Ukhimath</li>
+                        <li>Local dhabas and eateries</li>
+                        <li>Small markets selling religious items and snacks</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Ukhimath%20Booking" class="btn">Book Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#8c3e1f;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

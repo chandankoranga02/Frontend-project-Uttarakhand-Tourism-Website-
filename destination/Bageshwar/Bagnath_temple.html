@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagnath Temple — Bageshwar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f9f4ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #d4b5ff, #c1a0f9);
+            color: #2a144a;
+            text-align: center;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(120, 60, 180, 0.15);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(42, 20, 74, 0.1);
+            padding: 7px 14px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #2a144a;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:940px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            color: #5b20a1;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #e8d4ff;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tip {
+            background: #f8f1ff;
+            border-left: 4px solid #a471f9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .side .box {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .side h3 {
+            color: #4a198a;
+            margin-bottom: 6px;
+        }
+
+        .side p,
+        .side li {
+            font-size: 0.95rem;
+        }
+
+        .side ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side li {
+            padding: 6px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 8px;
+            background: #6b2ac8;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: .2s;
+        }
+
+        .btn:hover {
+            background: #551fa4;
+            transform: translateY(-2px);
+        }
+
+        .small {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        @media(max-width:460px) {
+            header h1 {
+                font-size: 1.5rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bagnath Temple</h1>
+            <p>Historic Shiva temple standing at the confluence of the Gomati and Saryu rivers — spiritual heart of
+                Bageshwar town.</p>
+            <div class="tags">
+                <div class="tag">Spiritual</div>
+                <div class="tag">Architecture</div>
+                <div class="tag">History</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section>
+                    <h2>Overview</h2>
+                    <p><strong>Bagnath Temple</strong> is a revered shrine dedicated to Lord Shiva, situated at the
+                        confluence of the Gomati and Saryu rivers in Bageshwar district. Built in the 10th century by
+                        the Chand rulers, the temple is a masterpiece of ancient Kumaoni stone architecture.</p>
+                    <p>“Bagnath” literally means “Tiger Lord,” symbolizing Lord Shiva. The temple complex contains
+                        multiple smaller shrines, stone idols, and inscriptions dating back centuries. It remains the
+                        focal point of the annual **Shivratri fair**, attracting thousands of devotees and tourists.</p>
+                    <p>Visiting Bagnath Temple offers not only spiritual peace but also a glimpse of Kumaon’s medieval
+                        craftsmanship and devotional heritage.</p>
+                </section>
+
+                <section>
+                    <h2>Highlights</h2>
+                    <ul>
+                        <li>10th-century temple dedicated to Lord Shiva</li>
+                        <li>Situated at the sacred confluence of Saryu and Gomati rivers</li>
+                        <li>Annual Shivratri Mela draws huge crowds</li>
+                        <li>Ancient stone carvings and idols</li>
+                        <li>Stunning sunrise and river views around the temple ghat</li>
+                    </ul>
+                </section>
+
+                <div class="tip">
+                    <strong>Visitor Tips:</strong>
+                    <p>Footwear not allowed inside temple premises. Visit early morning for peaceful darshan.
+                        Photography may be restricted in sanctum area — check local notices.</p>
+                </div>
+
+                <section>
+                    <h2>Photo Gallery</h2>
+                    <div class="images">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Bagnath_Temple_at_Bageshwar_Uttrakhand_-_panoramio_%28Cropped%29.jpg"
+                            alt="Bagnath Temple front view">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSio6Z5nP8EjWhH73LEPRauYI-AI38ybj3i8w&s"
+                            alt="Bagnath Temple near Saryu river">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Nearby Attractions</h2>
+                    <p>Combine with Baijnath Temple, Kausani viewpoint, or Pindari Glacier trek starting points near
+                        Bageshwar for a complete religious and scenic circuit.</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="box">
+                    <h3>Quick Facts</h3>
+                    <p><strong>Built:</strong> 10th Century (Chand Dynasty)</p>
+                    <p><strong>Deity:</strong> Lord Shiva</p>
+                    <p><strong>Festival:</strong> Maha Shivratri Fair (Feb–Mar)</p>
+                </div>
+
+                <div class="box">
+                    <h3>How to Reach</h3>
+                    <p><strong>From Almora:</strong> ~80 km via Kausani Road</p>
+                    <p><strong>Nearest Railhead:</strong> Kathgodam (~180 km)</p>
+                    <p><strong>Nearest Airport:</strong> Pantnagar (~205 km)</p>
+                </div>
+
+                <div class="box">
+                    <h3>Facilities</h3>
+                    <ul>
+                        <li>Parking near main ghat</li>
+                        <li>Local guides available</li>
+                        <li>Tea shops and eateries nearby</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Bagnath%20Temple%20Visit" class="btn">Plan
+                        Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#551fa4;">Send Enquiry</a>
+                    <p class="small">Phone: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

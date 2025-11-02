@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner Form</title>
+  <link rel="stylesheet" href="partner.css" />
+</head>
+
+<body>
+  <div id="container">
+    <form>
+      <div id="heading">
+        <label>Owner details</label>
+        <div id="sub-heading">
+          <label>Basic Details</label>
+        </div>
+      </div>
+
+      <fieldset id="name">
+        <legend>Full Name</legend>
+        <div class="input-group">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" placeholder="First name" >
+        </div>
+        <div class="input-group">
+          <label for="mname">Middle name</label>
+          <input type="text" id="mname" name="mname" placeholder="Middle name">
+        </div>
+        <div class="input-group">
+          <label for="lname">Surname</label>
+          <input type="text" id="lname" name="lname" placeholder="Surname" >
+        </div>
+      </fieldset>
+
+      <fieldset id="contact">
+        <legend>Contact Details</legend>
+        <div class="input-group">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Mobile number" >
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" >
+        </div>
+      </fieldset>
+
+      <fieldset id="personal">
+        <legend>Personal Info</legend>
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" >
+        </div>
+        <div class="input-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" >
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Transgender</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset id="address">
+        <legend>Address</legend>
+        <div class="input-group">
+          <label for="state">State</label>
+          <select id="state" name="state" >
+            <option>Select</option>
+        </div>
+
+        <div class="input-group">
+          <label for="district">District</label>
+          <select id="district" name="district" >
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="City name" >
+        </div>
+
+        <div class="input-group">
+          <label for="address1">Street / Apartment</label>
+          <input type="text" id="address1" name="address1" placeholder="Mandatory" >
+        </div>
+
+        <div class="input-group">
+          <label for="address2">Street Name 2</label>
+          <input type="text" id="address2" name="address2" placeholder="Optional">
+        </div>
+
+        <div class="input-group">
+          <label for="pincode">Pincode</label>
+          <input type="text" id="pincode" name="pincode" placeholder="Pincode" >
+        </div>
+
+        <div class="input-group">
+          <label for="landmark">Landmark</label>
+          <input type="text" id="landmark" name="landmark" placeholder="Landmark">
+        </div>
+      </fieldset>
+
+      <div id="buttons">
+        <button type="button" class="btn primary" id="Proceed_partner">Proceed</button>
+        <button type="reset" class="btn danger">Reset</button>
+        <button type="button" class="btn secondary">Save as Draft</button>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="states.js"></script>
+    <script src="code_states.js"></script>
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>

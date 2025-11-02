@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binsar Wildlife Sanctuary — Almora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background: #f7fff9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #c7f5d0, #a7f0ba);
+            padding: 25px;
+            border-radius: 14px;
+            text-align: center;
+            color: #003a1f;
+            box-shadow: 0 8px 25px rgba(0, 100, 50, 0.15);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+        }
+
+        .tags {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #e6fff0;
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            color: #00532b;
+            font-size: 0.85rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 370px;
+            gap: 25px;
+            margin-top: 22px;
+        }
+
+        @media(max-width:950px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #00733b;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #b9f5d1;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .tips {
+            background: #f0fff6;
+            border-left: 4px solid #00a85a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .side .box {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .side h3 {
+            color: #005f34;
+            margin-bottom: 6px;
+        }
+
+        .side p,
+        .side li {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .side ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .side li {
+            padding: 7px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 16px;
+            border-radius: 8px;
+            background: #00884a;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #006d3c;
+            transform: translateY(-2px);
+        }
+
+        .small {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        @media(max-width:450px) {
+            header h1 {
+                font-size: 1.4rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Binsar Wildlife Sanctuary</h1>
+            <p>Dense oak forests, Himalayan peaks, and over 200 bird species — Binsar is one of Kumaon’s most serene and
+                scenic wildlife sanctuaries.</p>
+            <div class="tags">
+                <div class="tag">Nature</div>
+                <div class="tag">Birding</div>
+                <div class="tag">Trekking</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section>
+                    <h2>Overview</h2>
+                    <p>Located about 30 km from Almora, <strong>Binsar Wildlife Sanctuary</strong> is spread across
+                        dense oak, rhododendron, and pine forests in the middle Himalayas. The sanctuary sits at an
+                        altitude of 2,000 to 2,500 meters and is known for its peaceful trails, rich biodiversity, and
+                        panoramic views of peaks like Nanda Devi, Trishul, and Panchachuli.</p>
+                    <p>It’s a paradise for bird watchers and nature enthusiasts. The quiet atmosphere, cool breeze, and
+                        thick green canopy make it one of Uttarakhand’s most tranquil spots. Inside the sanctuary,
+                        there’s also the famous <strong>Zero Point</strong>, which offers a 360° view of the snow-capped
+                        ranges.</p>
+                </section>
+
+                <section>
+                    <h2>Highlights</h2>
+                    <ul>
+                        <li>Over 200 species of birds and various wildlife including barking deer and leopards</li>
+                        <li>Dense oak, rhododendron, and pine forests — ideal for short treks</li>
+                        <li>Zero Point viewpoint for panoramic Himalayan views</li>
+                        <li>Eco-friendly lodges and KMVN guest houses inside the sanctuary</li>
+                        <li>Sunrise and sunset views from Binsar ridge are breathtaking</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Visitor Tips:</strong>
+                    <p>Entry closes by evening — plan early morning visits. Carry binoculars for bird watching. The
+                        roads inside are narrow; drive carefully. Warm clothes recommended even in summer.</p>
+                </div>
+
+                <section>
+                    <h2>Photo Gallery</h2>
+                    <div class="images">
+                        <img src="https://treeofliferesorts.com/wp-content/uploads/2023/03/Venture-out-on-a-jeep-safari-in-binsar-wildlife-sanctuary-001.webp"
+                            alt="Binsar forest view">
+                        <img src="https://uttarakhandtourism.gov.in/assets/media/UTDB_media_1735278796Wildlife_safari.jpg"
+                            alt="Binsar trail">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Nearby Attractions</h2>
+                    <p>Combine your Binsar visit with Kasar Devi Temple, Bright End Corner, or Jageshwar Temple for a
+                        full cultural and natural experience in Almora district.</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="box">
+                    <h3>Quick Facts</h3>
+                    <p><strong>Altitude:</strong> 2,420 m</p>
+                    <p><strong>Best Season:</strong> Mar–Jun & Oct–Nov</p>
+                    <p><strong>Timing:</strong> 6 AM – 6 PM</p>
+                </div>
+
+                <div class="box">
+                    <h3>How to Reach</h3>
+                    <p><strong>From Almora:</strong> ~30 km via Paparsali road.</p>
+                    <p><strong>Nearest Railhead:</strong> Kathgodam (120 km)</p>
+                    <p><strong>Nearest Airport:</strong> Pantnagar (145 km)</p>
+                </div>
+
+                <div class="box">
+                    <h3>Entry Fee</h3>
+                    <ul>
+                        <li>INR 150 (Indian Nationals)</li>
+                        <li>INR 600 (Foreign Nationals)</li>
+                        <li>INR 250 for private vehicle entry</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>Book Your Visit</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Binsar%20Visit" class="btn">Book Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#006d3c;">Send Enquiry</a>
+                    <p class="small">Contact: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

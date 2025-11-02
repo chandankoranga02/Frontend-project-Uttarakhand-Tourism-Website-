@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Adwani Village Trek — Pauri Garhwal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f0fff0;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #00b894, #019875);
+            color: #fff;
+            padding: 28px 18px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(1, 152, 117, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.1rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .95;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 10, 10, 0.05);
+        }
+
+        h2.section {
+            color: #019875;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #b2f5ea;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #e6fff0;
+            border: 1px solid #b2f5ea;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side {
+            position: relative;
+            top: 0;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #019875;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+            color: #222;
+        }
+
+        .muted {
+            color: #666;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #019875;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(1, 152, 117, 0.15);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .images img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Adwani Village Trek</h1>
+            <p>A scenic trek to the traditional village of Adwani — experience local culture, nature, and Himalayan
+                views.</p>
+            <div class="badges">
+                <div class="badge">Trekking</div>
+                <div class="badge">Nature</div>
+                <div class="badge">Culture</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>The Adwani Village trek is a moderate hike through pine and oak forests, terraced fields, and
+                        small streams. The trail leads to the picturesque village of Adwani, where visitors can observe
+                        traditional Garhwali lifestyle, wooden houses, and local farming practices.</p>
+                    <p>The trek is suitable for beginners to moderate trekkers and takes around 2–3 hours one way.
+                        Villagers are friendly and often offer local tea, snacks, and guidance. The area is quiet and
+                        peaceful, ideal for nature walks, photography, and cultural immersion.</p>
+                    <p>During monsoon, paths can be slippery, so trekking shoes are recommended. Best visited from
+                        October to May for clear skies and scenic views of the surrounding hills.</p>
+                </section>
+
+                <section class="highlights">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Moderate trek through forests and streams</li>
+                        <li>Traditional Garhwali village experience</li>
+                        <li>Photography & bird watching opportunities</li>
+                        <li>Local tea and snacks offered by villagers</li>
+                        <li>Combine with Kandoliya Temple or Pauri sunset point</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Quick tips:</strong>
+                    <p>Wear trekking shoes, carry water and light snacks. Early morning is best for clear views. Avoid
+                        trekking during heavy rains.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photos</h2>
+                    <div class="images">
+                        <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/18/18a1a34be44b8d05dacd453d9254a5aa_400x400.jpg"
+                            alt="Adwani Village Trek">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHoq4r-qsTKiHUwdYJeL26C3fsSJVUy4qt6g&s"
+                            alt="Trail to Adwani Village">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section">Nearby Attractions</h2>
+                    <p class="muted">Kandoliya Temple (15 min), Pauri town (20 min), Satpuli riverside (25 min) — ideal
+                        for combined trips.</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Average cost:</span> <span class="muted">Free / Donations</span></p>
+                    <p><span class="meta">Avg time to cover:</span> <span class="muted">3–4 hours round trip</span></p>
+                    <p><span class="meta">Timings:</span> <span class="muted">6:00 AM – 6:00 PM</span></p>
+                    <p><span class="meta">Best time to visit:</span> <span class="muted">Oct–May</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>From Pauri town:</strong> 5 km to trek start — taxi or private vehicle.</p>
+                    <p class="muted"><strong>Parking:</strong> Limited near trailhead.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Hotels & Cafes</h3>
+                    <ul class="list">
+                        <li><strong>Pauri Guesthouse</strong> — Budget stay</li>
+                        <li><strong>Local homestays</strong> — Scenic stay with local hospitality</li>
+                        <li><strong>Tea stalls</strong> — Available near trailhead</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Adwani%20Village%20Trek%20Booking" class="btn">Book
+                        Now</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#333;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

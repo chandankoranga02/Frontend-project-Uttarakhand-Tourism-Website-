@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kaichi Dham — Neem Karoli Baba Ashram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #fff9f2;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 28px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #fef3c7, #fde68a);
+            color: #432818;
+            padding: 28px 18px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: .95;
+        }
+
+        .badges {
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(67, 40, 24, 0.1);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: .85rem;
+            color: #432818;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(10, 10, 10, 0.04);
+        }
+
+        h2.section {
+            color: #92400e;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #fde68a;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .lead p {
+            margin-bottom: 12px;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .highlights ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #fff7ed;
+            border: 1px solid #fde68a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .side {
+            position: relative;
+            top: 0;
+        }
+
+        .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #78350f;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .muted {
+            color: #666;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #92400e;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(146, 64, 14, 0.14);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.4rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Kaichi Dham (Neem Karoli Baba Ashram)</h1>
+            <p>Peaceful spiritual destination dedicated to Neem Karoli Baba, surrounded by hills and forests near
+                Bhowali, Nainital district.</p>
+            <div class="badges">
+                <div class="badge">Spiritual</div>
+                <div class="badge">Temple</div>
+                <div class="badge">Peaceful</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section class="lead">
+                    <h2 class="section">Overview</h2>
+                    <p>Kaichi Dham, also known as the Neem Karoli Baba Ashram, is a famous spiritual retreat located
+                        about 17 km from Nainital, on the Nainital–Almora road. The temple complex was established by
+                        the revered saint Neem Karoli Baba and attracts thousands of devotees and seekers from across
+                        the world, including global figures and tech leaders.</p>
+                    <p>The temple is known for its serene ambiance, spiritual energy, and cleanliness. It is situated
+                        amidst lush green hills and near the Kosi River, creating a calm and meditative atmosphere. The
+                        ashram also runs charitable and community services for visitors and locals.</p>
+                    <p>Kaichi Dham gained international recognition for its connection with followers such as Steve Jobs
+                        and Mark Zuckerberg, who visited the ashram during their early years.</p>
+                </section>
+
+                <section class="highlights" style="margin-top:14px;">
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Temple and ashram of Neem Karoli Baba</li>
+                        <li>Annual Bhandara and spiritual gatherings in June</li>
+                        <li>Beautiful hill surroundings with peaceful river view</li>
+                        <li>Famous among global spiritual seekers</li>
+                        <li>Clean, well-maintained, and calm environment</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Quick tips:</strong>
+                    <p style="margin-top:8px;">Footwear, phones, and photography are not allowed inside temple premises.
+                        Maintain silence and decorum. The best time to visit is morning hours before the crowd builds
+                        up.</p>
+                </div>
+
+                <section style="margin-top:16px;">
+                    <h2 class="section">Photos</h2>
+                    <div class="images">
+                        <img src="https://www.resortsbythebaagh.com/public/uploads/823b6adb4e9564d6f22552095b756e6e.webp"
+                            alt="Kaichi Dham Temple">
+                        <img src="https://kainchidhamtours.com/assets/images/kainchi-dham_1687158479.webp"
+                            alt="Neem Karoli Baba Ashram front view">
+                    </div>
+                </section>
+
+                <section style="margin-top:18px;">
+                    <h2 class="section">Nearby</h2>
+                    <p class="muted">Bhowali (9 km), Nainital (17 km), Bhimtal (22 km), Sattal (25 km).</p>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Avg time:</span> <span class="muted">1–2 hours</span></p>
+                    <p><span class="meta">Timings:</span> <span class="muted">7:00 AM – 6:00 PM</span></p>
+                    <p><span class="meta">Entry:</span> <span class="muted">Free</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Airport:</strong> Pantnagar (~70 km)</p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~38 km)</p>
+                    <p class="muted"><strong>By Road:</strong> Located on Nainital–Almora road; regular taxis and buses
+                        available.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Facilities</h3>
+                    <ul class="list">
+                        <li>Clean restrooms and drinking water</li>
+                        <li>Langar/Bhandara during special occasions</li>
+                        <li>Shops for offerings and prasad</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Kaichi%20Dham%20Visit" class="btn">Plan Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#78350f;">Send Enquiry</a>
+                    <p class="small">Phone/WhatsApp: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

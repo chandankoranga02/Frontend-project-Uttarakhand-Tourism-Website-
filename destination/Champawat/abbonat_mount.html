@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Abbott Mount — Uttarakhand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f0f7fb;
+            color: #1b1b1b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #a8d0e6, #4d9ed8);
+            color: #0b2f4d;
+            text-align: center;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(11, 47, 77, 0.12);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: .95;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(11, 47, 77, 0.1);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: .85rem;
+            color: #0b2f4d;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width:960px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        h2.section {
+            color: #0b2f4d;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #a8d0e6;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-left: 6px;
+        }
+
+        .tips {
+            background: #e6f1f8;
+            border: 1px solid #b3d1ea;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .images img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .side .card {
+            background: #fff;
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 14px rgba(10, 10, 10, 0.04);
+        }
+
+        .card h3 {
+            color: #0b2f4d;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-weight: 700;
+        }
+
+        .muted {
+            color: #555;
+            font-size: .95rem;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 10px;
+            background: #0b2f4d;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(11, 47, 77, 0.2);
+        }
+
+        .small {
+            font-size: .9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        @media(max-width:420px) {
+            header h1 {
+                font-size: 1.5rem
+            }
+
+            .images img {
+                height: 120px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Abbott Mount</h1>
+            <p>Peaceful hill station offering panoramic views, cool weather, and a serene environment for relaxation.
+            </p>
+            <div class="badges">
+                <div class="badge">Hill Station</div>
+                <div class="badge">Nature</div>
+                <div class="badge">Photography</div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <article>
+                <section>
+                    <h2 class="section">Overview</h2>
+                    <p>Abbott Mount is a serene hill station known for its panoramic mountain views and tranquil
+                        environment. Its natural beauty, misty mornings, and moderate trekking routes attract visitors
+                        seeking peace away from the city.</p>
+                    <p>Walking trails, viewpoints, and small local eateries make it a relaxed destination for
+                        photography, meditation, and quiet exploration. The hill station is ideal for short getaways and
+                        nature enthusiasts.</p>
+                </section>
+
+                <section>
+                    <h2 class="section">Highlights</h2>
+                    <ul>
+                        <li>Panoramic views of surrounding hills and valleys</li>
+                        <li>Peaceful environment and misty mornings</li>
+                        <li>Short trekking routes for nature enthusiasts</li>
+                        <li>Photography of sunrises and sunsets</li>
+                        <li>Local eateries and resting points</li>
+                    </ul>
+                </section>
+
+                <div class="tips">
+                    <strong>Visitor Tips:</strong>
+                    <p>Carry a light jacket for mornings. Comfortable shoes are recommended for walking. Best visited
+                        between Mar–Jun and Sep–Nov. Keep the area clean and respect nature.</p>
+                </div>
+
+                <section>
+                    <h2 class="section">Photo Gallery</h2>
+                    <div class="images">
+                        <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202205241903428305-a74e108a-08f3-4fb9-a068-28dfcff28d14.jpg"
+                            alt="Abbott Mount view">
+                        <img src="https://pix10.agoda.net/hotelImages/344836/0/76f344fcbeb36dbeccf560769a5daf03.jpeg?s=1024x768"
+                            alt="Misty hills at Abbott Mount">
+                    </div>
+                </section>
+            </article>
+
+            <aside class="side">
+                <div class="card">
+                    <h3>Quick Facts</h3>
+                    <p><span class="meta">Best Time:</span> <span class="muted">Mar–Jun & Sep–Nov</span></p>
+                    <p><span class="meta">Visit Duration:</span> <span class="muted">2–3 hours or more</span></p>
+                    <p><span class="meta">Entry Fee:</span> <span class="muted">Free</span></p>
+                </div>
+
+                <div class="card">
+                    <h3>How to Reach</h3>
+                    <p class="muted"><strong>Nearest Town:</strong> Champawat (~30 km)</p>
+                    <p class="muted"><strong>Road:</strong> Accessible via local hill roads; suitable for cars and bikes
+                    </p>
+                    <p class="muted"><strong>Nearest Railhead:</strong> Kathgodam (~230 km)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Facilities</h3>
+                    <ul class="list">
+                        <li>Local eateries and tea stalls</li>
+                        <li>Viewpoints with benches</li>
+                        <li>Photography and sightseeing</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Book / Enquiry</h3>
+                    <a href="mailto:bookings@yourtourism.com?subject=Abbott%20Mount" class="btn">Plan Visit</a>
+                    <a href="mailto:info@yourtourism.com" class="btn" style="background:#0b2f4d;">Send Enquiry</a>
+                    <p class="small">Phone: +91-XXXXXXXXXX</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

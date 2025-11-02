@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complaint Form — We’ll fix it</title>
+
+  <!-- Optional: use same Google font as feedback form -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="complain.css" />
+</head>
+<body>
+  <main class="page">
+    <form class="card complaint-card" action="#" method="post" enctype="multipart/form-data" novalidate>
+      <header class="card-header">
+        <h1>Report a problem</h1>
+        <p class="sub">Tell us what went wrong — be specific so we can act fast.</p>
+      </header>
+
+      <fieldset class="row">
+        <label for="fullname" class="label">Full name</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required />
+      </fieldset>
+
+      <div class="row two-col">
+        <fieldset>
+          <label for="email" class="label">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+        </fieldset>
+
+        <fieldset>
+          <label for="phone" class="label">Mobile (optional)</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="9876543210" pattern="[0-9]{10}" />
+        </fieldset>
+      </div>
+
+      <div class="row two-col">
+        <fieldset>
+          <label for="complaint-type" class="label">Complaint type</label>
+          <select id="complaint-type" name="complaint_type" required>
+            <option value="" disabled selected>Select type</option>
+            <option value="product">Product / Item</option>
+            <option value="service">Service</option>
+            <option value="delivery">Delivery / Logistics</option>
+            <option value="billing">Billing / Refund</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="ref-id" class="label">Reference ID (order, invoice — optional)</label>
+          <input id="ref-id" name="ref_id" type="text" placeholder="Order #12345 or Invoice ID" />
+        </fieldset>
+      </div>
+
+      <fieldset class="row">
+        <label for="location" class="label">Where did this happen? (optional)</label>
+        <input id="location" name="location" type="text" placeholder="Website / Branch / App section" />
+      </fieldset>
+
+      <fieldset class="row">
+        <label for="details" class="label">Describe the issue</label>
+        <textarea id="details" name="details" rows="6" placeholder="Be specific: what happened, when, who was involved, screenshots if any..." required></textarea>
+      </fieldset>
+
+      <fieldset class="row">
+        <label for="attachments" class="label">Attachments (screenshots, receipts) — optional</label>
+        <input id="attachments" name="attachments[]" type="file" accept="image/*,.pdf" multiple />
+        <p class="hint small">Allowed: images or PDF. Max file size should be enforced server-side.</p>
+      </fieldset>
+
+      <fieldset class="row">
+        <label class="label">Severity</label>
+        <div class="radio-row">
+          <label class="radio">
+            <input type="radio" name="severity" value="low" checked />
+            <span>Low</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="severity" value="medium" />
+            <span>Medium</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="severity" value="high" />
+            <span>High / Urgent</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <footer class="card-footer">
+        <button type="submit" class="btn">Submit complaint</button>
+        <p class="hint">We will aim to respond within 48–72 hours. For urgent cases call support.</p>
+      </footer>
+    </form>
+  </main>
+</body>
+</html>
